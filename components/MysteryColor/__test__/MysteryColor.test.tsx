@@ -1,5 +1,5 @@
 import React from "react";
-import { render, screen, fireEvent } from "../../../utils/test/reduxRender";
+import { render, screen } from "../../../utils/test/reduxRender";
 import MysteryColor from "../index";
 import produce from "immer";
 import { preloadedState } from "../../../app/store";

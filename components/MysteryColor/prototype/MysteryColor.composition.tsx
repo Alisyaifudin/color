@@ -1,4 +1,4 @@
-import MysteryColor from "./MysteryColor";
+import { MysteryColor } from "./MysteryColor";
 
 export const BasicMysteryColor = () => {
 	const color = {
@@ -15,5 +15,5 @@ export const OpenedMysteryColor = () => {
 		g: 255,
 		b: 0,
 	};
-	return <MysteryColor color={color} done/>;
+	return <MysteryColor color={color} done />;
 };
