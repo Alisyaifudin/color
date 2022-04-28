@@ -14,6 +14,7 @@ export interface MetaState {
 		g: number;
 		b: number;
 	};
+	answer: string;
   done: boolean;
   win: boolean;
 }

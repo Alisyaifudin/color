@@ -11,12 +11,12 @@ export const initialState: MetaState = {
 		g: 0,
 		b: 0,
 	},
-
 	guess: {
 		r: 0,
 		g: 0,
 		b: 0,
 	},
+	answer: "",
 	done: false,
 	win: false,
 };
