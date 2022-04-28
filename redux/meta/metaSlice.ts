@@ -1,10 +1,11 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { MetaState, themeTypes } from "./metaInterface";
 import { THEME, LANGUAGES } from "../../utils/DICT";
+import colors from "../../utils/colors";
 
 export const initialState: MetaState = {
 	theme: THEME.DARK,
-	language: LANGUAGES.INA,
+	language: LANGUAGES.EN,
 	name: "black",
 	color: {
 		r: 0,
@@ -28,9 +29,31 @@ export const metaSlice = createSlice({
 		setTheme: (state, action: PayloadAction<themeTypes>) => {
 			state.theme = action.payload;
 		},
+		setAnswer: (state, action: PayloadAction<string>) => {
+			state.answer = action.payload;
+		},
+		submit: (state) => {
+			state.done = true;
+			if (state.answer === state.name) {
+				state.win = true;
+				state.guess = state.color;
+				return;
+			}
+			state.win = false;
+			const colorRBG = colors.map((c) => c.color);
+			const colorNames = colors.map((c) => c.name);
+			const index = colorNames.findIndex((c) => c === state.answer);
+			if (index !== -1) state.guess = colorRBG[index];
+			else state.guess = { r: -1, g: -1, b: -1 };
+		},
+		skip: (state) => {
+			state.done = false;
+			state.answer = "";
+			state.win = false;
+		},
 	},
 });
 
-export const { setTheme } = metaSlice.actions;
+export const { setTheme, skip, submit, setAnswer } = metaSlice.actions;
 
 export default metaSlice.reducer;
