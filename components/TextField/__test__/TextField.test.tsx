@@ -42,6 +42,15 @@ describe("TextField", () => {
 		expect(textboxEl).toBeDisabled();
 		expect(submitEl).toBeDisabled();
 	});
+	it("should be able to press enter to submit", () => {
+		render(<TextField />);
+		const textboxEl = screen.getByLabelText(/guess/i);
+		fireEvent.change(textboxEl, { target: { value: "lime" } });
+		const submitEl = screen.getByRole("button", { name: "submit" });
+		fireEvent.keyDown(textboxEl, { key: "Enter" });
+		expect(textboxEl).toBeDisabled();
+		expect(submitEl).toBeDisabled();
+	});
 	it("should show next button & be able to click it after clicking submit", () => {
 		render(<TextField />);
 		const textboxEl = screen.getByLabelText(/guess/i);

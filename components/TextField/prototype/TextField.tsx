@@ -52,6 +52,9 @@ export function TextField({
 		onChange && onChange(event.target.value);
 	const handleSkip = () => onClickSkip && onClickSkip();
 	const handleSubmit = () => onClickSubmit && onClickSubmit();
+	const handleKeyDown = (key: React.KeyboardEvent<HTMLDivElement>) => {
+		if (key.key === "Enter") onClickSubmit && onClickSubmit();
+	};
 	return (
 		<Stack gap="10px">
 			<Textfield
@@ -60,6 +63,7 @@ export function TextField({
 				variant="outlined"
 				value={value}
 				onChange={handleChange}
+				onKeyDown={handleKeyDown}
 			/>
 			<Stack direction="row" justifyContent="space-around">
 				<Button variant="outlined" onClick={handleSkip}>
