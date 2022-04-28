@@ -6,7 +6,7 @@ export const BasicMysteryColor = () => {
 		g: 255,
 		b: 0,
 	};
-	return <MysteryColor color={color} />;
+	return <MysteryColor name="lime" color={color} />;
 };
 
 export const OpenedMysteryColor = () => {
@@ -15,5 +15,5 @@ export const OpenedMysteryColor = () => {
 		g: 255,
 		b: 0,
 	};
-	return <MysteryColor color={color} done />;
+	return <MysteryColor name="lime" color={color} done />;
 };

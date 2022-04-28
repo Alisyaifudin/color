@@ -5,8 +5,9 @@ import { MysteryColor } from "./prototype";
 function MisteryColor() {
   const color = useAppSelector(state => state.meta.color)
   const done = useAppSelector(state => state.meta.done)
+  const name = useAppSelector(state => state.meta.name)
   return (
-    <MysteryColor color={color} done={done}/>
+    <MysteryColor name={name} color={color} done={done}/>
   )
 }
 

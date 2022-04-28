@@ -3,6 +3,7 @@ export type themeTypes = "light" | "dark";
 export interface MetaState {
 	theme: themeTypes;
 	language: string;
+	name: string;
 	color: {
 		r: number;
 		g: number;

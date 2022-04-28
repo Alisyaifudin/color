@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { styled } from "@mui/material/styles";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import Collapse from "@mui/material/Collapse";
-
+import RotateRightIcon from "@mui/icons-material/RotateRight";
+import IconButton from "@mui/material/IconButton";
+import { rgb2hsv } from "../../../utils/colorconversion";
 export type MysteryColorProps = {
+	/**
+	 * color name
+	 */
+	name: string;
 	/**
 	 * Box color
 	 */
@@ -19,24 +25,32 @@ export type MysteryColorProps = {
 	done?: boolean;
 };
 
-export function MysteryColor({ color, done = false }: MysteryColorProps) {
+export function MysteryColor({ name, color, done = false }: MysteryColorProps) {
+	const [triplet, setTriplet] = useState<{ [x: string]: number }>({
+		r: color.r,
+		g: color.g,
+		b: color.b,
+	});
+
+	const handleClick = () =>
+		Object.keys(triplet)[0] === "r" ? setTriplet(rgb2hsv(color)) : setTriplet(color);
+
 	return (
 		<Stack justifyContent="center" alignItems="center" gap="10px">
 			<Color data-testid="color" r={color.r} g={color.g} b={color.b} />
 			<Collapse in={done}>
 				<Typography textAlign="center" component="h2" variant="body1" fontSize="1.4rem">
-					lime
+					{name}
 				</Typography>
-				<Stack direction="row" gap="15px">
-					<Typography data-testid="value" component="p" variant="caption">
-						R: {color.r}
-					</Typography>
-					<Typography data-testid="value" component="p" variant="caption">
-						G: {color.g}
-					</Typography>
-					<Typography data-testid="value" component="p" variant="caption">
-						B: {color.b}
-					</Typography>
+				<Stack direction="row" gap="15px" alignItems="center">
+					{Object.entries(triplet).map((entry) => (
+						<Typography key={entry[0]} data-testid="value" component="p" variant="caption">
+							{entry[0]}: {entry[1]}
+						</Typography>
+					))}
+					<IconButton onClick={handleClick}>
+						<RotateRightIcon />
+					</IconButton>
 				</Stack>
 			</Collapse>
 		</Stack>
