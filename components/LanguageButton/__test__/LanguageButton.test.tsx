@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen, fireEvent } from "../../../utils/test/reduxRender";
-import Navbar from "../index";
+import LanguageButton from "../index";
 
 jest.mock("next/router", () => ({
 	useRouter() {
@@ -20,7 +20,7 @@ jest.mock("next/router", () => ({
 	},
 }));
 
-describe("Navbar", () => {
+describe("LanguageButton", () => {
 	beforeEach(async () => {
 		const useRouter = jest.spyOn(require("next/router"), "useRouter");
 
@@ -38,17 +38,19 @@ describe("Navbar", () => {
 			prefetch: jest.fn(() => null),
 		}));
 	});
-	it("should navbar properly", () => {
-		render(<Navbar />);
-		const titleEl = screen.getByText(/colors/i);
-		const levelEl = screen.getByLabelText(/level/i);
-		const modeEl = screen.getByLabelText(/dark button/i);
-		const languageEl = screen.getByLabelText(/en-US/i);
-		const listEl = screen.getByLabelText(/list/i);
-		expect(titleEl).toBeVisible();
-		expect(levelEl).toBeVisible();
-		expect(modeEl).toBeVisible();
-		expect(languageEl).toBeVisible();
-		expect(listEl).toBeVisible();
+	it("should render option with english choosen", () => {
+		render(<LanguageButton />);
+		const engEl = screen.getByText(/eng/i);
+		const idnEl = screen.getByText(/idn/i);
+		expect(engEl).toHaveClass("MuiButton-contained");
+		expect(idnEl).toHaveClass("MuiButton-outlined");
+	});
+	it("should change to indonesia by clicking it", () => {
+		render(<LanguageButton />);
+		const engEl = screen.getByText(/eng/i);
+		const idnEl = screen.getByText(/idn/i);
+		fireEvent.click(idnEl);
+		expect(engEl).toHaveClass("MuiButton-outlined");
+		expect(idnEl).toHaveClass("MuiButton-contained");
 	});
 });

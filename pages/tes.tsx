@@ -8,6 +8,7 @@ import { BasicTextField } from "../components/TextField/prototype/TextField.comp
 import { NoAnswerColor } from "../components/AnswerColor/prototype/AnswerColor.composition";
 // import { LightMode } from "../components/ThemeButton/prototype/ThemeButton.composition";
 import { BasicNavbar } from "../components/Navbar/prototype/Navbar.composition";
+import { EngLanguage } from "../components/LanguageButton/prototype/LanguageButton.composition";
 
 const Test: NextPage = () => {
 	return (
@@ -19,7 +20,8 @@ const Test: NextPage = () => {
 					{/* <BasicTextField/> */}
 					{/* <NoAnswerColor /> */}
 					{/* <LightMode /> */}
-					<BasicNavbar />
+					{/* <BasicNavbar /> */}
+					<EngLanguage />
 				</Div2>
 			</Div>
 		</Container>

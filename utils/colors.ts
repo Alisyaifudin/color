@@ -1,6 +1,11 @@
+import { LANGUAGES } from "./DICT";
+
 const colors = [
 	{
-		name: "lime",
+		name: {
+			[LANGUAGES.INA]: "hijau pupus",
+			[LANGUAGES.EN]: "lime",
+		},
 		color: {
 			r: 0,
 			g: 255,
@@ -9,7 +14,10 @@ const colors = [
 		level: 1,
 	},
 	{
-		name: "red",
+		name: {
+			[LANGUAGES.INA]: "merah",
+			[LANGUAGES.EN]: "red",
+		},
 		color: {
 			r: 255,
 			g: 0,
@@ -18,7 +26,10 @@ const colors = [
 		level: 1,
 	},
 	{
-		name: "black",
+		name: {
+			[LANGUAGES.INA]: "hitam",
+			[LANGUAGES.EN]: "black",
+		},
 		color: {
 			r: 0,
 			g: 0,

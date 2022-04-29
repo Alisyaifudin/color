@@ -8,8 +8,8 @@ export const LANGUAGES = {
 export const VERSION = "0.1.0";
 
 export const LANGUAGES_NAME = {
-	[LANGUAGES.INA]: "Bahasa Indonesia",
-	[LANGUAGES.EN]: "English",
+	[LANGUAGES.INA]: "IDN",
+	[LANGUAGES.EN]: "ENG",
 };
 
 export const THEME = {

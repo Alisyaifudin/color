@@ -8,17 +8,23 @@ import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import { useAppDispatch, useAppSelector } from "../app/hooks";
 import AnswerColor from "../components/AnswerColor";
-import { setTheme } from "../redux/meta/metaSlice";
+import { setLanguage, setTheme } from "../redux/meta/metaSlice";
 import { useEffect } from "react";
+import { useRouter } from "next/router";
 
 const Home: NextPage = () => {
+	const router = useRouter();
 	const dispatch = useAppDispatch();
 	const done = useAppSelector((state) => state.meta.done);
 	useEffect(() => {
-		const localMode = window.localStorage.getItem("mode")
-		if (localMode === "light" || localMode === "dark") dispatch(setTheme(localMode))
-	}, [dispatch])
-	
+		const localMode = window.localStorage.getItem("mode");
+		if (localMode === "light" || localMode === "dark") dispatch(setTheme(localMode));
+	}, [dispatch]);
+	useEffect(() => {
+		const locale = router.locale;
+		if (!locale) return;
+		dispatch(setLanguage(locale));
+	}, [dispatch, router]);
 	return (
 		<>
 			<Head>
@@ -28,7 +34,7 @@ const Home: NextPage = () => {
 			</Head>
 			<Navbar />
 			<Container maxWidth="xs">
-				<Stack sx={{pt: "10vh", width: "100%"}} gap="20px">
+				<Stack sx={{ pt: "10vh", width: "100%" }} gap="20px">
 					<MysteryColor />
 					<TextField />
 					{done && <AnswerColor />}

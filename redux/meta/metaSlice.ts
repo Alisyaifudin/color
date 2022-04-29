@@ -6,7 +6,10 @@ import colors from "../../utils/colors";
 export const initialState: MetaState = {
 	theme: THEME.DARK,
 	language: LANGUAGES.EN,
-	mysteryName: "black",
+	mysteryName: {
+		[LANGUAGES.INA]: "hitam",
+		[LANGUAGES.EN]: "black",
+	},
 	hsv: false,
 	mysteryColor: {
 		r: 0,
@@ -30,19 +33,22 @@ export const metaSlice = createSlice({
 		setTheme: (state, action: PayloadAction<themeTypes>) => {
 			state.theme = action.payload;
 		},
+		setLanguage: (state, action: PayloadAction<string>) => {
+			state.language = action.payload;
+		},
 		setGuessName: (state, action: PayloadAction<string>) => {
 			state.guessName = action.payload;
 		},
 		submit: (state) => {
 			state.done = true;
-			if (state.guessName === state.mysteryName) {
+			if (state.guessName === state.mysteryName[state.language]) {
 				state.win = true;
 				state.guessColor = state.mysteryColor;
 				return;
 			}
 			state.win = false;
 			const colorRBG = colors.map((c) => c.color);
-			const colorNames = colors.map((c) => c.name.toLocaleLowerCase());
+			const colorNames = colors.map((c) => c.name[state.language].toLocaleLowerCase());
 			const index = colorNames.findIndex((c) => c === state.guessName.toLocaleLowerCase());
 			if (index !== -1) state.guessColor = colorRBG[index];
 			else state.guessColor = { r: -1, g: -1, b: -1 };
@@ -58,6 +64,6 @@ export const metaSlice = createSlice({
 	},
 });
 
-export const { setTheme, skip, submit, setGuessName, setHsv } = metaSlice.actions;
+export const { setTheme, setLanguage, skip, submit, setGuessName, setHsv } = metaSlice.actions;
 
 export default metaSlice.reducer;

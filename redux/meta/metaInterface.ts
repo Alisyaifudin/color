@@ -2,20 +2,22 @@ export type themeTypes = "light" | "dark";
 
 export interface MetaState {
 	theme: themeTypes;
-	language: string;
-	mysteryName: string;
+	language: string
+	mysteryName: {
+		[x: string]: string;
+	};
 	mysteryColor: {
 		r: number;
 		g: number;
 		b: number;
 	};
-  guessColor: {
+	guessColor: {
 		r: number;
 		g: number;
 		b: number;
 	};
 	hsv: boolean;
 	guessName: string;
-  done: boolean;
-  win: boolean;
+	done: boolean;
+	win: boolean;
 }
