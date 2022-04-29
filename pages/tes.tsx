@@ -6,7 +6,8 @@ import {
 } from "../components/MysteryColor/prototype/MysteryColor.composition";
 import { BasicTextField } from "../components/TextField/prototype/TextField.compositon";
 import { NoAnswerColor } from "../components/AnswerColor/prototype/AnswerColor.composition";
-import { LightMode } from "../components/ThemeButton/prototype/ThemeButton.composition";
+// import { LightMode } from "../components/ThemeButton/prototype/ThemeButton.composition";
+import { BasicNavbar } from "../components/Navbar/prototype/Navbar.composition";
 
 const Test: NextPage = () => {
 	return (
@@ -17,7 +18,8 @@ const Test: NextPage = () => {
 					{/* <OpenedMysteryColor/> */}
 					{/* <BasicTextField/> */}
 					{/* <NoAnswerColor /> */}
-					<LightMode />
+					{/* <LightMode /> */}
+					<BasicNavbar />
 				</Div2>
 			</Div>
 		</Container>

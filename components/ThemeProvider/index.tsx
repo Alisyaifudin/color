@@ -14,7 +14,11 @@ export default function Provider({ children }: ThemeProviderProps) {
 	return (
 		<React.Fragment>
 			<ThemeProvider theme={theme}>
-				<ScopedCssBaseline enableColorScheme data-testid="css-baseline">
+				<ScopedCssBaseline
+					enableColorScheme
+					data-testid="css-baseline"
+					style={{ height: "100vh", display: "flex", flexDirection: "column" }}
+				>
 					{children}
 				</ScopedCssBaseline>
 			</ThemeProvider>

@@ -1,10 +1,10 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
-import { BasicNavbar } from "./Navbar.composition";
+import { render, screen, fireEvent } from "../../../utils/test/reduxRender";
+import Navbar from "../index";
 
 describe("Navbar", () => {
 	it("should navbar properly", () => {
-		render(<BasicNavbar />);
+		render(<Navbar />);
 		const titleEl = screen.getByText(/colors/i);
 		const levelEl = screen.getByLabelText(/level/i);
 		const modeEl = screen.getByLabelText(/dark button/i);

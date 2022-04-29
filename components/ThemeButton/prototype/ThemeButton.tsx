@@ -19,7 +19,7 @@ export type ThemeButtonProps = {
 export function ThemeButton({ mode, onClick }: ThemeButtonProps) {
 	const handleClick = (mode: "light" | "dark") => () => onClick && onClick(mode);
 	return (
-		<ButtonGroup variant="contained">
+		<ButtonGroup variant="outlined">
 			{mode === "light" && (
 				<IconButton aria-label="light button" onClick={handleClick("dark")}>
 					<Brightness7Icon />
