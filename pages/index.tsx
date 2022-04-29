@@ -11,11 +11,16 @@ import AnswerColor from "../components/AnswerColor";
 import { setLanguage, setTheme } from "../redux/meta/metaSlice";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
+import Collapse from "@mui/material/Collapse";
+import ListColor from "../components/ListColor";
+import ListLevel from "../components/ListLevel";
 
 const Home: NextPage = () => {
 	const router = useRouter();
 	const dispatch = useAppDispatch();
 	const done = useAppSelector((state) => state.meta.done);
+	const showList = useAppSelector((state) => state.meta.showList);
+
 	useEffect(() => {
 		const localMode = window.localStorage.getItem("mode");
 		if (localMode === "light" || localMode === "dark") dispatch(setTheme(localMode));
@@ -33,12 +38,24 @@ const Home: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<Navbar />
-			<Container maxWidth="xs" sx={{marginBlock: "2rem"}}>
-				<Stack sx={{ pt: "10vh", width: "100%" }} gap="20px" alignItems="center">
-					<MysteryColor />
-					<TextField />
-					{done && <AnswerColor />}
-				</Stack>
+			<Container maxWidth="sm" sx={{ marginBlock: "2rem" }}>
+				<Collapse in={!showList}>
+					<Stack sx={{ pt: "10vh", width: "100%" }} gap="20px" alignItems="center">
+						<MysteryColor />
+						<TextField />
+						{done && <AnswerColor />}
+					</Stack>
+				</Collapse>
+				<Collapse in={showList}>
+					<Stack direction="row" gap="5px" sx={{ display: { xs: "none", sm: "flex" } }}>
+						<ListLevel />
+						<ListColor />
+					</Stack>
+					<Stack gap="5px" sx={{ display: { xs: "flex", sm: "none" } }}>
+						<ListLevel />
+						<ListColor />
+					</Stack>
+				</Collapse>
 			</Container>
 			<footer>
 				<Typography fontSize={12}>Made with ❤️ in Bandung © 2022 Muhammad Ali Syaifudin</Typography>

@@ -37,15 +37,15 @@ export type ListColorProps = {
 export function ListColor({ colors, level, langs }: ListColorProps) {
 	const selectedColors = colors.filter((color) => color.level <= level);
 	return (
-		<Box sx={{ flexGrow: 1 }}>
-			<Grid container spacing={2} alignItems="center" justifyContent="center">
+		<Box sx={{ flexGrow: 1}}>
+			<Grid container spacing={2} alignItems="center">
 				{selectedColors.map((color, index) => (
 					<Grid item xs={12} sm={6} md={4} key={index}>
 						<Item>
 							<Color data-testid="color" r={color.color.r} g={color.color.g} b={color.color.b} />
-							<Typography fontStyle="italic">{color.name[langs[0]]}</Typography>
+							<Typography variant="caption" fontStyle="italic">{color.name[langs[0]]}</Typography>
 							<Divider orientation="vertical" flexItem />
-							<Typography>{color.name[langs[1]]}</Typography>
+							<Typography variant="caption">{color.name[langs[1]]}</Typography>
 						</Item>
 					</Grid>
 				))}
@@ -57,7 +57,7 @@ export function ListColor({ colors, level, langs }: ListColorProps) {
 const Item = styled(Paper)(({ theme }) => ({
 	backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
 	...theme.typography.body2,
-	padding: theme.spacing(2),
+	padding: theme.spacing(0.5),
 	display: "flex",
 	flexDirection: "row",
 	alignItems: "center",
@@ -67,6 +67,6 @@ const Item = styled(Paper)(({ theme }) => ({
 
 const Color = styled("div")<{ r: number; g: number; b: number }>`
 	background-color: rgb(${({ r }) => r}, ${({ g }) => g}, ${({ b }) => b});
-	width: 30px;
+	width: 10px;
 	aspect-ratio: 1;
 `;
