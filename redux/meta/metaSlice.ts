@@ -7,6 +7,7 @@ export const initialState: MetaState = {
 	theme: THEME.DARK,
 	language: LANGUAGES.EN,
 	name: "black",
+	hsv: false,
 	color: {
 		r: 0,
 		g: 0,
@@ -51,9 +52,12 @@ export const metaSlice = createSlice({
 			state.answer = "";
 			state.win = false;
 		},
+		setHsv: (state) => {
+			state.hsv = !state.hsv;
+		},
 	},
 });
 
-export const { setTheme, skip, submit, setAnswer } = metaSlice.actions;
+export const { setTheme, skip, submit, setAnswer, setHsv } = metaSlice.actions;
 
 export default metaSlice.reducer;

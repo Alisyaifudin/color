@@ -23,17 +23,20 @@ export type MysteryColorProps = {
 	 * done?
 	 */
 	done?: boolean;
+	/**
+	 * in hsv format?
+	 */
+	hsv?: boolean;
+	/**
+	 * Click change format
+	 */
+	onClick: () => void;
 };
 
-export function MysteryColor({ name, color, done = false }: MysteryColorProps) {
-	const [triplet, setTriplet] = useState<{ [x: string]: number }>({
-		r: color.r,
-		g: color.g,
-		b: color.b,
-	});
+export function MysteryColor({ name, color, done = false, hsv = false, onClick }: MysteryColorProps) {
+	const triplet = hsv ? rgb2hsv(color) : color;
 
-	const handleClick = () =>
-		Object.keys(triplet)[0] === "r" ? setTriplet(rgb2hsv(color)) : setTriplet(color);
+	const handleClick = () => onClick && onClick()
 
 	return (
 		<Stack justifyContent="center" alignItems="center" gap="10px">
