@@ -17,3 +17,21 @@ export const HsvAnswerColor = () => {
 	};
 	return <AnswerColor name="lime" color={color} hsv />;
 };
+
+export const NoAnswerColor = () => {
+	const color = {
+		r: -1,
+		g: -1,
+		b: -1,
+	};
+	return <AnswerColor name="Not Found" color={color} />;
+};
+
+export const NoIdAnswerColor = () => {
+	const color = {
+		r: -1,
+		g: -1,
+		b: -1,
+	};
+	return <AnswerColor name="Tidak Ada" color={color} />;
+};

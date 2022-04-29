@@ -27,7 +27,11 @@ export function AnswerColor({ name, color, hsv = false }: AnswerColorProps) {
 	const thecolor = hsv ? rgb2hsv(color) : color;
 	return (
 		<Stack justifyContent="center" alignItems="center" gap="10px">
-			<Color data-testid="color" r={color.r} g={color.g} b={color.b} />
+			{color.r !== -1 ? (
+				<Color data-testid="color" r={color.r} g={color.g} b={color.b} />
+			) : (
+				<NoColor data-testid="no-color" />
+			)}
 			<Typography textAlign="center" component="h2" variant="body1" fontSize="1.4rem">
 				{name}
 			</Typography>
@@ -44,6 +48,17 @@ export function AnswerColor({ name, color, hsv = false }: AnswerColorProps) {
 
 const Color = styled("div")<{ r: number; g: number; b: number }>`
 	background-color: rgb(${({ r }) => r}, ${({ g }) => g}, ${({ b }) => b});
+	width: 100px;
+	aspect-ratio: 1;
+`;
+
+const NoColor = styled("div")`
+	background: linear-gradient(
+		166deg,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(231, 231, 231, 1) 100%,
+		rgba(0, 212, 255, 1) 100%
+	);
 	width: 100px;
 	aspect-ratio: 1;
 `;

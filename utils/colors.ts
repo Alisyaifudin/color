@@ -17,6 +17,15 @@ const colors = [
 		},
 		level: 1,
 	},
+	{
+		name: "black",
+		color: {
+			r: 0,
+			g: 0,
+			b: 0,
+		},
+		level: 1,
+	},
 ];
 
 export default colors;

@@ -17,9 +17,7 @@ export const THEME = {
 	LIGHT: "light" as themeTypes,
 };
 
-export const GENERAL = {
-	
-};
+export const GENERAL = {};
 
 const words = {
 	THEME_LIGHT: {
@@ -38,17 +36,21 @@ const words = {
 		[LANGUAGES.INA]: "Tebak",
 		[LANGUAGES.EN]: "Guess",
 	},
-	SKIP:{
+	SKIP: {
 		[LANGUAGES.INA]: "lewati",
 		[LANGUAGES.EN]: "skip",
 	},
-	SUBMIT:{
+	SUBMIT: {
 		[LANGUAGES.INA]: "jawab",
 		[LANGUAGES.EN]: "submit",
 	},
-	NEXT:{
+	NEXT: {
 		[LANGUAGES.INA]: "lanjut",
 		[LANGUAGES.EN]: "next",
+	},
+	NOT_FOUND: {
+		[LANGUAGES.INA]: "Tidak Ada",
+		[LANGUAGES.EN]: "Not Found",
 	},
 };
 

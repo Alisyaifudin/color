@@ -2,16 +2,16 @@ import React, { useMemo } from "react";
 import { TextField as TextFieldProto } from "./prototype";
 import DICT from "../../utils/DICT";
 import { useAppDispatch, useAppSelector } from "../../app/hooks";
-import { skip, setAnswer, submit } from "../../redux/meta/metaSlice";
+import { skip, setGuessName, submit } from "../../redux/meta/metaSlice";
 
 function TextField() {
 	const dispatch = useAppDispatch();
-	const value = useAppSelector((state) => state.meta.answer);
+	const value = useAppSelector((state) => state.meta.guessName);
 	const lang = useAppSelector((state) => state.meta.language);
 	const done = useAppSelector((state) => state.meta.done);
 	const skipLabel = useMemo(() => (done ? DICT.NEXT[lang] : DICT.SKIP[lang]), [done, lang]);
 	const handleSkip = () => dispatch(skip());
-	const handleChange = (value: string) => dispatch(setAnswer(value));
+	const handleChange = (value: string) => dispatch(setGuessName(value));
 	const handleSubmit = () => dispatch(submit());
 
 	return (

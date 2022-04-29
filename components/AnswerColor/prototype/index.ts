@@ -1,2 +1,2 @@
-export type { MysteryColorProps } from "./AnswerColor";
-export { MysteryColor } from "./AnswerColor";
+export type { AnswerColorProps } from "./AnswerColor";
+export { AnswerColor } from "./AnswerColor";
