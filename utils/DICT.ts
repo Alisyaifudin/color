@@ -1,5 +1,7 @@
 import { themeTypes } from "../redux/meta/metaInterface";
 
+export const LEVELS = [1, 2, 3];
+
 export const LANGUAGES = {
 	INA: "id-ID",
 	EN: "en-US",

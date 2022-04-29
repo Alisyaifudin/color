@@ -6,10 +6,10 @@ export const BasicNavbar = () => {
 		return <div aria-label="dark button" style={{ border: "red 1px solid" }}>mode</div>;
 	};
 	const LevelButton = () => {
-		return <div aria-label="level" style={{ border: "red 1px solid" }}>lv</div>;
+		return <div aria-label="lv" style={{ border: "red 1px solid" }}>lv</div>;
 	};
 	const LanguageButton = () => {
-		return <div aria-label="en-US" style={{ border: "red 1px solid" }}>id-ID</div>;
+		return <div aria-label="languages" style={{ border: "red 1px solid" }}>id-ID</div>;
 	};
 	const ListButton = () => {
 		return <div aria-label="list" style={{ border: "red 1px solid" }}>List</div>;

@@ -6,9 +6,9 @@ describe("Navbar", () => {
 	it("should navbar properly", () => {
 		render(<BasicNavbar />);
 		const titleEl = screen.getByText(/colors/i);
-		const levelEl = screen.getByLabelText(/level/i);
+		const levelEl = screen.getByLabelText(/lv/i);
 		const modeEl = screen.getByLabelText(/dark button/i);
-		const languageEl = screen.getByLabelText(/en-US/i);
+		const languageEl = screen.getByLabelText(/languages/i);
 		const listEl = screen.getByLabelText(/list/i);
 		expect(titleEl).toBeVisible();
 		expect(levelEl).toBeVisible();

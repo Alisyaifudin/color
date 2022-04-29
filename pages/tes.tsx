@@ -9,6 +9,7 @@ import { NoAnswerColor } from "../components/AnswerColor/prototype/AnswerColor.c
 // import { LightMode } from "../components/ThemeButton/prototype/ThemeButton.composition";
 import { BasicNavbar } from "../components/Navbar/prototype/Navbar.composition";
 import { EngLanguage } from "../components/LanguageButton/prototype/LanguageButton.composition";
+import { BasicLevelButton } from "../components/LevelButton/prototype/LevelButton.composition";
 
 const Test: NextPage = () => {
 	return (
@@ -21,7 +22,8 @@ const Test: NextPage = () => {
 					{/* <NoAnswerColor /> */}
 					{/* <LightMode /> */}
 					{/* <BasicNavbar /> */}
-					<EngLanguage />
+					{/* <EngLanguage /> */}
+					<BasicLevelButton />
 				</Div2>
 			</Div>
 		</Container>

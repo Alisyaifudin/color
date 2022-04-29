@@ -20,4 +20,6 @@ export interface MetaState {
 	guessName: string;
 	done: boolean;
 	win: boolean;
+	level: number;
+	score: number;
 }

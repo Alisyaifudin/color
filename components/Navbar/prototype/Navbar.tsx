@@ -15,7 +15,7 @@ export type NavbarProps = {
 
 export const Navbar = ({ ThemeButton, LanguageButton, LevelButton, ListButton }: NavbarProps) => {
 	return (
-		<AppBar position="static">
+		<AppBar position="static" sx={{ padding: "10px 0" }}>
 			<Container maxWidth="md">
 				<Toolbar disableGutters>
 					<Stack
@@ -24,10 +24,16 @@ export const Navbar = ({ ThemeButton, LanguageButton, LevelButton, ListButton }:
 						justifyContent="space-between"
 						alignItems="center"
 					>
-						<Typography variant="h6" noWrap component="div" sx={{ mr: 2 }}>
+						<Typography
+							variant="h4"
+							noWrap
+							component="div"
+							sx={{ mr: 2, display: { xs: "none", sm: "flex" } }}
+						>
 							COLORS
 						</Typography>
-						<Stack direction="row" gap="5px">
+						<div />
+						<Stack direction="row" gap="5px" alignItems="center" flexWrap="wrap" justifyContent="center">
 							{LevelButton}
 							{ThemeButton}
 							{LanguageButton}

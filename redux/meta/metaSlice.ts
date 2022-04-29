@@ -24,6 +24,8 @@ export const initialState: MetaState = {
 	guessName: "",
 	done: false,
 	win: false,
+	level: 1,
+	score: 0,
 };
 
 export const metaSlice = createSlice({
@@ -44,9 +46,11 @@ export const metaSlice = createSlice({
 			if (state.guessName === state.mysteryName[state.language]) {
 				state.win = true;
 				state.guessColor = state.mysteryColor;
+				state.score += 1;
 				return;
 			}
 			state.win = false;
+			state.score = 0;
 			const colorRBG = colors.map((c) => c.color);
 			const colorNames = colors.map((c) => c.name[state.language].toLocaleLowerCase());
 			const index = colorNames.findIndex((c) => c === state.guessName.toLocaleLowerCase());
@@ -61,9 +65,13 @@ export const metaSlice = createSlice({
 		setHsv: (state) => {
 			state.hsv = !state.hsv;
 		},
+		setLevel: (state, action: PayloadAction<number>) => {
+			state.level = action.payload;
+		},
 	},
 });
 
-export const { setTheme, setLanguage, skip, submit, setGuessName, setHsv } = metaSlice.actions;
+export const { setTheme, setLanguage, skip, submit, setGuessName, setHsv, setLevel } =
+	metaSlice.actions;
 
 export default metaSlice.reducer;

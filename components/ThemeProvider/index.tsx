@@ -2,6 +2,7 @@ import React from "react";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import ScopedCssBaseline from "@mui/material/ScopedCssBaseline";
 import { useAppSelector } from "../../app/hooks";
+import { Box } from "@mui/material";
 
 export interface ThemeProviderProps {
 	children: React.ReactNode;
@@ -17,7 +18,7 @@ export default function Provider({ children }: ThemeProviderProps) {
 				<ScopedCssBaseline
 					enableColorScheme
 					data-testid="css-baseline"
-					style={{ height: "100vh", display: "flex", flexDirection: "column" }}
+					style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}
 				>
 					{children}
 				</ScopedCssBaseline>

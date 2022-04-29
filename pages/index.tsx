@@ -33,8 +33,8 @@ const Home: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<Navbar />
-			<Container maxWidth="xs">
-				<Stack sx={{ pt: "10vh", width: "100%" }} gap="20px">
+			<Container maxWidth="xs" sx={{marginBlock: "2rem"}}>
+				<Stack sx={{ pt: "10vh", width: "100%" }} gap="20px" alignItems="center">
 					<MysteryColor />
 					<TextField />
 					{done && <AnswerColor />}
