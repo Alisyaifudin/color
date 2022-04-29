@@ -58,7 +58,6 @@ export const metaSlice = createSlice({
 				return;
 			}
 			state.win = false;
-			state.score = 0;
 			const colorRBG = colors.map((c) => c.color);
 			const colorNames = colors.map((c) => c.name[state.language].toLocaleLowerCase());
 			const index = colorNames.findIndex((c) => c === state.guessName.toLocaleLowerCase());
@@ -68,7 +67,7 @@ export const metaSlice = createSlice({
 		skip: (state) => {
 			state.done = false;
 			state.guessName = "";
-			state.win = false;
+			if(!state.win) state.score = 0;
 		},
 		setHsv: (state) => {
 			state.hsv = !state.hsv;

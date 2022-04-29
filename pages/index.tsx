@@ -14,12 +14,16 @@ import { useRouter } from "next/router";
 import Collapse from "@mui/material/Collapse";
 import ListColor from "../components/ListColor";
 import ListLevel from "../components/ListLevel";
+import DICT from "../utils/DICT";
 
 const Home: NextPage = () => {
 	const router = useRouter();
 	const dispatch = useAppDispatch();
 	const done = useAppSelector((state) => state.meta.done);
+	const win = useAppSelector((state) => state.meta.win);
 	const showList = useAppSelector((state) => state.meta.showList);
+	const score = useAppSelector((state) => state.meta.score);
+	const lang = useAppSelector((state) => state.meta.language);
 
 	useEffect(() => {
 		const localMode = window.localStorage.getItem("mode");
@@ -40,10 +44,13 @@ const Home: NextPage = () => {
 			<Navbar />
 			<Container maxWidth="sm" sx={{ marginBlock: "2rem" }}>
 				<Collapse in={!showList}>
-					<Stack sx={{ pt: "10vh", width: "100%" }} gap="20px" alignItems="center">
+					<Stack sx={{ width: "100%" }} gap="20px" alignItems="center">
+						<Typography>
+							{DICT.SCORE[lang]}: {score}
+						</Typography>
 						<MysteryColor />
 						<TextField />
-						{done && <AnswerColor />}
+						{done && !win && <AnswerColor />}
 					</Stack>
 				</Collapse>
 				<Collapse in={showList}>

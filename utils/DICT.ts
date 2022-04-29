@@ -54,6 +54,10 @@ const words = {
 		[LANGUAGES.INA]: "Tidak Ada",
 		[LANGUAGES.EN]: "Not Found",
 	},
+	SCORE: {
+		[LANGUAGES.INA]: "Skor",
+		[LANGUAGES.EN]: "Score",
+	},
 };
 
 export default words;
