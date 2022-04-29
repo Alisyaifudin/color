@@ -26,6 +26,7 @@ export const initialState: MetaState = {
 	win: false,
 	level: 1,
 	score: 0,
+	showList: false,
 };
 
 export const metaSlice = createSlice({
@@ -40,6 +41,9 @@ export const metaSlice = createSlice({
 		},
 		setGuessName: (state, action: PayloadAction<string>) => {
 			state.guessName = action.payload;
+		},
+		setShowList: (state) => {
+			state.showList = !state.showList;
 		},
 		submit: (state) => {
 			state.done = true;
@@ -71,7 +75,7 @@ export const metaSlice = createSlice({
 	},
 });
 
-export const { setTheme, setLanguage, skip, submit, setGuessName, setHsv, setLevel } =
+export const { setTheme, setLanguage, skip, submit, setGuessName, setHsv, setLevel, setShowList } =
 	metaSlice.actions;
 
 export default metaSlice.reducer;

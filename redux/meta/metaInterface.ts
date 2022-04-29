@@ -22,4 +22,5 @@ export interface MetaState {
 	win: boolean;
 	level: number;
 	score: number;
+	showList: boolean;
 }
