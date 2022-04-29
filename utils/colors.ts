@@ -37,6 +37,30 @@ const colors = [
 		},
 		level: 1,
 	},
+	{
+		name: {
+			[LANGUAGES.INA]: "merah muda",
+			[LANGUAGES.EN]: "pink",
+		},
+		color: {
+			r: 255,
+			g: 192,
+			b: 203,
+		},
+		level: 2,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: "dewangga",
+			[LANGUAGES.EN]: "orange red",
+		},
+		color: {
+			r: 255,
+			g: 69,
+			b: 0,
+		},
+		level: 3,
+	},
 ];
 
 export default colors;

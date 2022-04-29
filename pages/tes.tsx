@@ -11,6 +11,7 @@ import { BasicNavbar } from "../components/Navbar/prototype/Navbar.composition";
 import { EngLanguage } from "../components/LanguageButton/prototype/LanguageButton.composition";
 import { BasicLevelButton } from "../components/LevelButton/prototype/LevelButton.composition";
 import { BasicListLevel } from "../components/ListLevel/prototype/ListLevel.composition";
+import { Level1ListColor } from "../components/ListColor/prototype/ListColor.composition";
 
 const Test: NextPage = () => {
 	return (
@@ -25,7 +26,8 @@ const Test: NextPage = () => {
 					{/* <BasicNavbar /> */}
 					{/* <EngLanguage /> */}
 					{/* <BasicLevelButton /> */}
-					<BasicListLevel />
+					{/* <BasicListLevel /> */}
+					<Level1ListColor />
 				</Div2>
 			</Div>
 		</Container>
