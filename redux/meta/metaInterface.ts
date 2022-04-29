@@ -23,4 +23,5 @@ export interface MetaState {
 	level: number;
 	score: number;
 	showList: boolean;
+	showLevel: number;
 }
