@@ -5,8 +5,20 @@ import Navbar from "../components/Navbar";
 import TextField from "../components/TextField/";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
+import Stack from "@mui/material/Stack";
+import { useAppDispatch, useAppSelector } from "../app/hooks";
+import AnswerColor from "../components/AnswerColor";
+import { setTheme } from "../redux/meta/metaSlice";
+import { useEffect } from "react";
 
 const Home: NextPage = () => {
+	const dispatch = useAppDispatch();
+	const done = useAppSelector((state) => state.meta.done);
+	useEffect(() => {
+		const localMode = window.localStorage.getItem("mode")
+		if (localMode === "light" || localMode === "dark") dispatch(setTheme(localMode))
+	}, [dispatch])
+	
 	return (
 		<>
 			<Head>
@@ -15,9 +27,12 @@ const Home: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<Navbar />
-			<Container maxWidth="xs" sx={{ pt: "10vh", pb: "10vh" }}>
-				<MysteryColor />
-				<TextField />
+			<Container maxWidth="xs">
+				<Stack sx={{pt: "10vh", width: "100%"}} gap="20px">
+					<MysteryColor />
+					<TextField />
+					{done && <AnswerColor />}
+				</Stack>
 			</Container>
 			<footer>
 				<Typography fontSize={12}>Made with ❤️ in Bandung © 2022 Muhammad Ali Syaifudin</Typography>

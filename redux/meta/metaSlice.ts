@@ -42,8 +42,8 @@ export const metaSlice = createSlice({
 			}
 			state.win = false;
 			const colorRBG = colors.map((c) => c.color);
-			const colorNames = colors.map((c) => c.name);
-			const index = colorNames.findIndex((c) => c === state.guessName);
+			const colorNames = colors.map((c) => c.name.toLocaleLowerCase());
+			const index = colorNames.findIndex((c) => c === state.guessName.toLocaleLowerCase());
 			if (index !== -1) state.guessColor = colorRBG[index];
 			else state.guessColor = { r: -1, g: -1, b: -1 };
 		},
