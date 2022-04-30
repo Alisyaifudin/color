@@ -1464,6 +1464,210 @@ const colors = [
 		level: 3,
 	},
 	//Purple
+	{
+		name: {
+			[LANGUAGES.INA]: ["Indigo", "Nila"],
+			[LANGUAGES.EN]: ["Indigo"],
+		},
+		color: {
+			r: 75,
+			g: 0,
+			b: 130,
+		},
+		level: 1,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Lembayung"],
+			[LANGUAGES.EN]: ["Purple"],
+		},
+		color: {
+			r: 128,
+			g: 0,
+			b: 128,
+		},
+		level: 1,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Merah Lembayung Tua"],
+			[LANGUAGES.EN]: ["Dark Magenta"],
+		},
+		color: {
+			r: 139,
+			g: 0,
+			b: 139,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Ungu Tua"],
+			[LANGUAGES.EN]: ["Dark Violet"],
+		},
+		color: {
+			r: 148,
+			g: 0,
+			b: 211,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Biru Batu Tua"],
+			[LANGUAGES.EN]: ["Dark Slate Blue"],
+		},
+		color: {
+			r: 72,
+			g: 61,
+			b: 139,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Biru Ungu"],
+			[LANGUAGES.EN]: ["Blue Violet"],
+		},
+		color: {
+			r: 138,
+			g: 43,
+			b: 226,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Anggrek Gelap"],
+			[LANGUAGES.EN]: ["Dark Orchid"],
+		},
+		color: {
+			r: 153,
+			g: 50,
+			b: 204,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Fusia", "Magenta", "Merah Lembayung"],
+			[LANGUAGES.EN]: ["Fuchsia", "Magenta"],
+		},
+		color: {
+			r: 255,
+			g: 0,
+			b: 255,
+		},
+		level: 2,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Biru Batu"],
+			[LANGUAGES.EN]: ["Slate Blue"],
+		},
+		color: {
+			r: 106,
+			g: 90,
+			b: 205,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Biru Batu Sedang"],
+			[LANGUAGES.EN]: ["Medium Slate Blue"],
+		},
+		color: {
+			r: 123,
+			g: 104,
+			b: 238,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Anggrek Sedang"],
+			[LANGUAGES.EN]: ["Medium Orchid"],
+		},
+		color: {
+			r: 186,
+			g: 85,
+			b: 211,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Lembayung Sedang"],
+			[LANGUAGES.EN]: ["Medium Purple"],
+		},
+		color: {
+			r: 147,
+			g: 112,
+			b: 219,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Anggrek"],
+			[LANGUAGES.EN]: ["Orchid"],
+		},
+		color: {
+			r: 218,
+			g: 112,
+			b: 214,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Ungu"],
+			[LANGUAGES.EN]: ["Violet"],
+		},
+		color: {
+			r: 238,
+			g: 130,
+			b: 238,
+		},
+		level: 1,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Plum"],
+			[LANGUAGES.EN]: ["Plum"],
+		},
+		color: {
+			r: 221,
+			g: 160,
+			b: 221,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Widuri"],
+			[LANGUAGES.EN]: ["Thistle"],
+		},
+		color: {
+			r: 216,
+			g: 191,
+			b: 216,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Gandaria"],
+			[LANGUAGES.EN]: ["Lavender"],
+		},
+		color: {
+			r: 216,
+			g: 191,
+			b: 216,
+		},
+		level: 2,
+	},
 ];
 
 export default colors;
