@@ -911,6 +911,114 @@ const colors = [
 	///Green
 	{
 		name: {
+			[LANGUAGES.INA]: ["Hijau Tua", "Balu"],
+			[LANGUAGES.EN]: ["Dark Green", "Parsley Green"],
+		},
+		color: {
+			r: 0,
+			g: 100,
+			b: 0,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Hijau"],
+			[LANGUAGES.EN]: ["Green"],
+		},
+		color: {
+			r: 0,
+			g: 128,
+			b: 0,
+		},
+		level: 1,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Hijau Zaitun Gelap"],
+			[LANGUAGES.EN]: ["Dark Olive Green"],
+		},
+		color: {
+			r: 85,
+			g: 107,
+			b: 47,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Hijau Hutan"],
+			[LANGUAGES.EN]: ["Forest Green"],
+		},
+		color: {
+			r: 34,
+			g: 139,
+			b: 34,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Hijau Lautan"],
+			[LANGUAGES.EN]: ["Sea Green"],
+		},
+		color: {
+			r: 46,
+			g: 139,
+			b: 87,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Zaitun"],
+			[LANGUAGES.EN]: ["Olive"],
+		},
+		color: {
+			r: 128,
+			g: 128,
+			b: 0,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Zaitun Pucat"],
+			[LANGUAGES.EN]: ["Olive Drab"],
+		},
+		color: {
+			r: 107,
+			g: 142,
+			b: 35,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Hijau Lautan Sedang"],
+			[LANGUAGES.EN]: ["Medium Sea Green"],
+		},
+		color: {
+			r: 60,
+			g: 179,
+			b: 113,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Hijau Limau"],
+			[LANGUAGES.EN]: ["Lime Green"],
+		},
+		color: {
+			r: 50,
+			g: 205,
+			b: 50,
+		},
+		level: 3,
+	},
+	{
+		name: {
 			[LANGUAGES.INA]: ["Hijau Pupus"],
 			[LANGUAGES.EN]: ["Lime"],
 		},
