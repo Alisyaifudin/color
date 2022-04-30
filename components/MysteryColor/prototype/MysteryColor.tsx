@@ -47,8 +47,7 @@ export function MysteryColor({
 	const handleClick = () => onClick && onClick();
 
 	return (
-		<Box flexGrow={1}>
-			<Stack justifyContent="center" alignItems="center" gap="10px">
+		<Stack sx={{ width: "120px" }} justifyContent="center" alignItems="center" gap="10px">
 				<Color data-testid="color" r={color.r} g={color.g} b={color.b} />
 				<Collapse in={done}>
 					{done && (
@@ -70,7 +69,6 @@ export function MysteryColor({
 					</IconButton>
 				)}
 			</Stack>
-		</Box>
 	);
 }
 

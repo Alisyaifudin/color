@@ -27,27 +27,25 @@ export type AnswerColorProps = {
 export function AnswerColor({ name, color, hsv = false }: AnswerColorProps) {
 	const thecolor = hsv ? rgb2hsv(color) : color;
 	return (
-		<Box flexGrow={1}>
-			<Stack justifyContent="center" alignItems="center" gap="10px">
-				{color.r !== -1 ? (
-					<Color data-testid="color" r={color.r} g={color.g} b={color.b} />
-				) : (
-					<NoColor data-testid="no-color" />
-				)}
-				<Box>
-					<Typography textAlign="center" component="h2" variant="body1" fontSize="1.4rem">
-						{name}
-					</Typography>
-					<Stack direction="row" gap="5px" alignItems="center" paddingX="5px">
-						{Object.entries(thecolor).map((entry) => (
-							<Typography key={entry[0]} data-testid="value" component="p" variant="caption">
-								{entry[0]}: {hsv ? entry[1].toFixed(2) : entry[1]}
-							</Typography>
-						))}
-					</Stack>
-				</Box>
-			</Stack>
-		</Box>
+		<Stack sx={{ width: "120px" }} justifyContent="center" alignItems="center" gap="10px">
+			{color.r !== -1 ? (
+				<Color data-testid="color" r={color.r} g={color.g} b={color.b} />
+			) : (
+				<NoColor data-testid="no-color" />
+			)}
+			<Box>
+				<Typography textAlign="center" component="h2" variant="body1" fontSize="1.4rem">
+					{name}
+				</Typography>
+				<Stack direction="row" gap="5px" alignItems="center" paddingX="5px">
+					{Object.entries(thecolor).map((entry) => (
+						<Typography key={entry[0]} data-testid="value" component="p" variant="caption">
+							{entry[0]}: {hsv ? entry[1].toFixed(2) : entry[1]}
+						</Typography>
+					))}
+				</Stack>
+			</Box>
+		</Stack>
 	);
 }
 

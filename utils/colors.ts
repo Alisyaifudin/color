@@ -277,7 +277,7 @@ const colors = [
 			g: 128,
 			b: 128,
 		},
-		level: 3,
+		level: 1,
 	},
 	{
 		name: {

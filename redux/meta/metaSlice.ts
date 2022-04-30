@@ -3,7 +3,7 @@ import { MetaState, themeTypes } from "./metaInterface";
 import { THEME, LANGUAGES } from "../../utils/DICT";
 import colors from "../../utils/colors";
 
-export const initialState: MetaState = {
+export const initialState: MetaState = { 
 	theme: THEME.DARK,
 	language: LANGUAGES.EN,
 	mysteryName: {
@@ -58,6 +58,7 @@ export const metaSlice = createSlice({
 			);
 			if (index === -1) {
 				state.guessColor = { r: -1, g: -1, b: -1 };
+				state.win = false;
 				return;
 			}
 			if (
