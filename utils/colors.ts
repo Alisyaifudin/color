@@ -222,7 +222,7 @@ const colors = [
 	{
 		name: {
 			[LANGUAGES.INA]: ["Abu-abu Muda"],
-			[LANGUAGES.EN]: ["Light Gray",],
+			[LANGUAGES.EN]: ["Light Gray"],
 		},
 		color: {
 			r: 211,
@@ -234,7 +234,7 @@ const colors = [
 	{
 		name: {
 			[LANGUAGES.INA]: ["Perak"],
-			[LANGUAGES.EN]: ["Silver",],
+			[LANGUAGES.EN]: ["Silver"],
 		},
 		color: {
 			r: 192,
@@ -246,7 +246,7 @@ const colors = [
 	{
 		name: {
 			[LANGUAGES.INA]: ["Nilajada"],
-			[LANGUAGES.EN]: ["Dark Gray",],
+			[LANGUAGES.EN]: ["Dark Gray"],
 		},
 		color: {
 			r: 169,
@@ -258,7 +258,7 @@ const colors = [
 	{
 		name: {
 			[LANGUAGES.INA]: ["Hitam Sabak Muda"],
-			[LANGUAGES.EN]: ["Light Slate Gray",],
+			[LANGUAGES.EN]: ["Light Slate Gray"],
 		},
 		color: {
 			r: 119,
@@ -270,7 +270,7 @@ const colors = [
 	{
 		name: {
 			[LANGUAGES.INA]: ["Kelabu"],
-			[LANGUAGES.EN]: ["Gray",],
+			[LANGUAGES.EN]: ["Gray"],
 		},
 		color: {
 			r: 128,
@@ -282,7 +282,7 @@ const colors = [
 	{
 		name: {
 			[LANGUAGES.INA]: ["Hitam Sabak"],
-			[LANGUAGES.EN]: ["Slate Gray",],
+			[LANGUAGES.EN]: ["Slate Gray"],
 		},
 		color: {
 			r: 112,
@@ -294,7 +294,7 @@ const colors = [
 	{
 		name: {
 			[LANGUAGES.INA]: ["Abu-abu Redup"],
-			[LANGUAGES.EN]: ["Dim Gray",],
+			[LANGUAGES.EN]: ["Dim Gray"],
 		},
 		color: {
 			r: 105,
@@ -306,7 +306,7 @@ const colors = [
 	{
 		name: {
 			[LANGUAGES.INA]: ["Hitam Sabak Tua"],
-			[LANGUAGES.EN]: ["Dark Slate Gray",],
+			[LANGUAGES.EN]: ["Dark Slate Gray"],
 		},
 		color: {
 			r: 47,
@@ -513,7 +513,7 @@ const colors = [
 	{
 		name: {
 			[LANGUAGES.INA]: ["Dewangga"],
-			[LANGUAGES.EN]: ["Orange Red"],
+			[LANGUAGES.EN]: ["Orange Red", "Grenadine Pink", "Yellowish Red"],
 		},
 		color: {
 			r: 255,
@@ -521,6 +521,54 @@ const colors = [
 			b: 0,
 		},
 		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Tomat"],
+			[LANGUAGES.EN]: ["Tomato"],
+		},
+		color: {
+			r: 255,
+			g: 99,
+			b: 71,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Jingga Tua", "Oranye Tua"],
+			[LANGUAGES.EN]: ["Dark Orange"],
+		},
+		color: {
+			r: 255,
+			g: 140,
+			b: 0,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Koral"],
+			[LANGUAGES.EN]: ["Coral"],
+		},
+		color: {
+			r: 255,
+			g: 127,
+			b: 80,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Jingga", "Oranye"],
+			[LANGUAGES.EN]: ["Orange"],
+		},
+		color: {
+			r: 255,
+			g: 165,
+			b: 0,
+		},
+		level: 1,
 	},
 	//Yellow
 	//Brown
