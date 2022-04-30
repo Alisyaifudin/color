@@ -51,7 +51,10 @@ export const metaSlice = createSlice({
 		},
 		submit: (state) => {
 			state.done = true;
-			if (state.guessName === state.mysteryName[state.language]) {
+			if (
+				state.guessName.toLocaleLowerCase() ===
+				state.mysteryName[state.language].toLocaleLowerCase()
+			) {
 				state.win = true;
 				state.guessColor = state.mysteryColor;
 				state.score += 1;

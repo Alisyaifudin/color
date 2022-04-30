@@ -4,8 +4,8 @@ const colors = [
 	//White
 	{
 		name: {
-			[LANGUAGES.INA]: ["putih"],
-			[LANGUAGES.EN]: ["white"],
+			[LANGUAGES.INA]: ["Putih"],
+			[LANGUAGES.EN]: ["White"],
 		},
 		color: {
 			r: 255,
@@ -16,8 +16,8 @@ const colors = [
 	},
 	{
 		name: {
-			[LANGUAGES.INA]: ["danta", "semerdanta", "putih gading"],
-			[LANGUAGES.EN]: ["ivory"],
+			[LANGUAGES.INA]: ["Danta", "Semerdanta", "Putih Gading"],
+			[LANGUAGES.EN]: ["Ivory"],
 		},
 		color: {
 			r: 255,
@@ -28,8 +28,8 @@ const colors = [
 	},
 	{
 		name: {
-			[LANGUAGES.INA]: ["salju"],
-			[LANGUAGES.EN]: ["snow"],
+			[LANGUAGES.INA]: ["Salju"],
+			[LANGUAGES.EN]: ["Snow"],
 		},
 		color: {
 			r: 255,
@@ -40,8 +40,8 @@ const colors = [
 	},
 	{
 		name: {
-			[LANGUAGES.INA]: ["krim pudina", "putih murup"],
-			[LANGUAGES.EN]: ["mint cream", "shining white"],
+			[LANGUAGES.INA]: ["Krim Pudina", "Putih Murup"],
+			[LANGUAGES.EN]: ["Mint Cream", "Shining White"],
 		},
 		color: {
 			r: 245,
@@ -52,8 +52,8 @@ const colors = [
 	},
 	{
 		name: {
-			[LANGUAGES.INA]: ["azure"],
-			[LANGUAGES.EN]: ["azure"],
+			[LANGUAGES.INA]: ["Azure"],
+			[LANGUAGES.EN]: ["Azure"],
 		},
 		color: {
 			r: 240,
@@ -64,8 +64,8 @@ const colors = [
 	},
 	{
 		name: {
-			[LANGUAGES.INA]: ["kinantan"],
-			[LANGUAGES.EN]: ["floral white", "white as-a-swan"],
+			[LANGUAGES.INA]: ["Kinantan"],
+			[LANGUAGES.EN]: ["Floral White", "White as-a-swan"],
 		},
 		color: {
 			r: 255,
@@ -76,8 +76,8 @@ const colors = [
 	},
 	{
 		name: {
-			[LANGUAGES.INA]: ["nusa indah"],
-			[LANGUAGES.EN]: ["honey dew", "greenish white"],
+			[LANGUAGES.INA]: ["Nusa Indah"],
+			[LANGUAGES.EN]: ["Honey Dew", "Greenish White"],
 		},
 		color: {
 			r: 240,
@@ -88,8 +88,8 @@ const colors = [
 	},
 	{
 		name: {
-			[LANGUAGES.INA]: ["putih kapur", "putih hantu"],
-			[LANGUAGES.EN]: ["ghost white", "chalk white"],
+			[LANGUAGES.INA]: ["Putih kapur", "Putih Hantu"],
+			[LANGUAGES.EN]: ["Ghost White", "Chalk White"],
 		},
 		color: {
 			r: 248,
@@ -100,8 +100,8 @@ const colors = [
 	},
 	{
 		name: {
-			[LANGUAGES.INA]: ["kulit cangkerang", "putih belak"],
-			[LANGUAGES.EN]: ["seashell", "broken white"],
+			[LANGUAGES.INA]: ["Kulit Kerang", "Putih Belak"],
+			[LANGUAGES.EN]: ["Seashell", "Broken White"],
 		},
 		color: {
 			r: 255,
@@ -112,8 +112,8 @@ const colors = [
 	},
 	{
 		name: {
-			[LANGUAGES.INA]: ["biru alice"],
-			[LANGUAGES.EN]: ["alice blue"],
+			[LANGUAGES.INA]: ["Biru Alice"],
+			[LANGUAGES.EN]: ["Alice Blue"],
 		},
 		color: {
 			r: 240,
@@ -124,8 +124,8 @@ const colors = [
 	},
 	{
 		name: {
-			[LANGUAGES.INA]: ["les lama", "putih bahana"],
-			[LANGUAGES.EN]: ["old lace", "dull white"],
+			[LANGUAGES.INA]: ["Renda Tua", "Putih Bahana"],
+			[LANGUAGES.EN]: ["Old Lace", "Dull White"],
 		},
 		color: {
 			r: 253,
@@ -136,8 +136,8 @@ const colors = [
 	},
 	{
 		name: {
-			[LANGUAGES.INA]: ["taluki", "merah gandaria"],
-			[LANGUAGES.EN]: ["lavender blush", "pinkish white"],
+			[LANGUAGES.INA]: ["Taluki", "Merah Gandaria"],
+			[LANGUAGES.EN]: ["Lavender Blush", "Pinkish White"],
 		},
 		color: {
 			r: 255,
@@ -148,8 +148,8 @@ const colors = [
 	},
 	{
 		name: {
-			[LANGUAGES.INA]: ["asap putih", "putih mutiara"],
-			[LANGUAGES.EN]: ["white smoke", "pale gray", "pearl gray", "pearl white"],
+			[LANGUAGES.INA]: ["Asap Putih", "Putih Mutiara"],
+			[LANGUAGES.EN]: ["White Smoke", "Pale Gray", "Pearl Gray", "Pearl White"],
 		},
 		color: {
 			r: 245,
@@ -160,8 +160,8 @@ const colors = [
 	},
 	{
 		name: {
-			[LANGUAGES.INA]: ["kuning air", "putih kuam"],
-			[LANGUAGES.EN]: ["beige"],
+			[LANGUAGES.INA]: ["Kuning Air", "Putih Kuam"],
+			[LANGUAGES.EN]: ["Beige"],
 		},
 		color: {
 			r: 245,
@@ -172,8 +172,8 @@ const colors = [
 	},
 	{
 		name: {
-			[LANGUAGES.INA]: ["linen"],
-			[LANGUAGES.EN]: ["linen"],
+			[LANGUAGES.INA]: ["Linen"],
+			[LANGUAGES.EN]: ["Linen"],
 		},
 		color: {
 			r: 250,
@@ -184,8 +184,8 @@ const colors = [
 	},
 	{
 		name: {
-			[LANGUAGES.INA]: ["putih antik"],
-			[LANGUAGES.EN]: ["antique white"],
+			[LANGUAGES.INA]: ["Putih Antik"],
+			[LANGUAGES.EN]: ["Antique White"],
 		},
 		color: {
 			r: 250,
@@ -196,8 +196,8 @@ const colors = [
 	},
 	{
 		name: {
-			[LANGUAGES.INA]: ["mawar berkabut"],
-			[LANGUAGES.EN]: ["misty rose"],
+			[LANGUAGES.INA]: ["Mawar Kerkabut"],
+			[LANGUAGES.EN]: ["Misty Rose"],
 		},
 		color: {
 			r: 255,
@@ -209,8 +209,8 @@ const colors = [
 	//Gray
 	{
 		name: {
-			[LANGUAGES.INA]: ["putih perak"],
-			[LANGUAGES.EN]: ["gainsboro", "silvery"],
+			[LANGUAGES.INA]: ["Putih Perak"],
+			[LANGUAGES.EN]: ["Gainsboro", "Silvery"],
 		},
 		color: {
 			r: 220,
@@ -221,8 +221,8 @@ const colors = [
 	},
 	{
 		name: {
-			[LANGUAGES.INA]: ["abu-abu muda"],
-			[LANGUAGES.EN]: ["light gray",],
+			[LANGUAGES.INA]: ["Abu-abu Muda"],
+			[LANGUAGES.EN]: ["Light Gray",],
 		},
 		color: {
 			r: 211,
@@ -233,8 +233,8 @@ const colors = [
 	},
 	{
 		name: {
-			[LANGUAGES.INA]: ["perak"],
-			[LANGUAGES.EN]: ["silver",],
+			[LANGUAGES.INA]: ["Perak"],
+			[LANGUAGES.EN]: ["Silver",],
 		},
 		color: {
 			r: 192,
@@ -245,8 +245,8 @@ const colors = [
 	},
 	{
 		name: {
-			[LANGUAGES.INA]: ["nilajada"],
-			[LANGUAGES.EN]: ["dark gray",],
+			[LANGUAGES.INA]: ["Nilajada"],
+			[LANGUAGES.EN]: ["Dark Gray",],
 		},
 		color: {
 			r: 169,
@@ -257,8 +257,8 @@ const colors = [
 	},
 	{
 		name: {
-			[LANGUAGES.INA]: ["hitam sabak muda"],
-			[LANGUAGES.EN]: ["light slate gray",],
+			[LANGUAGES.INA]: ["Hitam Sabak Muda"],
+			[LANGUAGES.EN]: ["Light Slate Gray",],
 		},
 		color: {
 			r: 119,
@@ -269,8 +269,8 @@ const colors = [
 	},
 	{
 		name: {
-			[LANGUAGES.INA]: ["kelabu"],
-			[LANGUAGES.EN]: ["gray",],
+			[LANGUAGES.INA]: ["Kelabu"],
+			[LANGUAGES.EN]: ["Gray",],
 		},
 		color: {
 			r: 128,
@@ -281,8 +281,8 @@ const colors = [
 	},
 	{
 		name: {
-			[LANGUAGES.INA]: ["hitam sabak"],
-			[LANGUAGES.EN]: ["slate gray",],
+			[LANGUAGES.INA]: ["Hitam Sabak"],
+			[LANGUAGES.EN]: ["Slate Gray",],
 		},
 		color: {
 			r: 112,
@@ -293,8 +293,8 @@ const colors = [
 	},
 	{
 		name: {
-			[LANGUAGES.INA]: ["abu-abu redup"],
-			[LANGUAGES.EN]: ["dim gray",],
+			[LANGUAGES.INA]: ["Abu-abu Redup"],
+			[LANGUAGES.EN]: ["Dim Gray",],
 		},
 		color: {
 			r: 105,
@@ -305,8 +305,8 @@ const colors = [
 	},
 	{
 		name: {
-			[LANGUAGES.INA]: ["hitam sabak tua"],
-			[LANGUAGES.EN]: ["dark slate gray",],
+			[LANGUAGES.INA]: ["Hitam Sabak Tua"],
+			[LANGUAGES.EN]: ["Dark Slate Gray",],
 		},
 		color: {
 			r: 47,
@@ -317,8 +317,8 @@ const colors = [
 	},
 	{
 		name: {
-			[LANGUAGES.INA]: ["hitam"],
-			[LANGUAGES.EN]: ["black"],
+			[LANGUAGES.INA]: ["Hitam"],
+			[LANGUAGES.EN]: ["Black"],
 		},
 		color: {
 			r: 0,
@@ -327,35 +327,11 @@ const colors = [
 		},
 		level: 1,
 	},
-	///Green
+	//Pink
 	{
 		name: {
-			[LANGUAGES.INA]: ["hijau pupus"],
-			[LANGUAGES.EN]: ["lime"],
-		},
-		color: {
-			r: 0,
-			g: 255,
-			b: 0,
-		},
-		level: 1,
-	},
-	{
-		name: {
-			[LANGUAGES.INA]: ["merah"],
-			[LANGUAGES.EN]: ["red"],
-		},
-		color: {
-			r: 255,
-			g: 0,
-			b: 0,
-		},
-		level: 1,
-	},
-	{
-		name: {
-			[LANGUAGES.INA]: ["merah muda"],
-			[LANGUAGES.EN]: ["pink"],
+			[LANGUAGES.INA]: ["Merah Muda", "Merah Jambu"],
+			[LANGUAGES.EN]: ["Pink"],
 		},
 		color: {
 			r: 255,
@@ -366,8 +342,82 @@ const colors = [
 	},
 	{
 		name: {
-			[LANGUAGES.INA]: ["dewangga"],
-			[LANGUAGES.EN]: ["orange red"],
+			[LANGUAGES.INA]: ["Merah Muda Terang"],
+			[LANGUAGES.EN]: ["Light Pink"],
+		},
+		color: {
+			r: 255,
+			g: 182,
+			b: 193,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Merah Muda Merona"],
+			[LANGUAGES.EN]: ["Hot Pink"],
+		},
+		color: {
+			r: 255,
+			g: 105,
+			b: 180,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Merah Ungu Pucat"],
+			[LANGUAGES.EN]: ["Pale Violet Red"],
+		},
+		color: {
+			r: 219,
+			g: 112,
+			b: 147,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Merah Mudah Tua"],
+			[LANGUAGES.EN]: ["Deep Pink"],
+		},
+		color: {
+			r: 255,
+			g: 20,
+			b: 147,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Merah Ungu Sedang"],
+			[LANGUAGES.EN]: ["Medium Violet Red"],
+		},
+		color: {
+			r: 199,
+			g: 21,
+			b: 133,
+		},
+		level: 3,
+	},
+	//Red
+	{
+		name: {
+			[LANGUAGES.INA]: ["Merah"],
+			[LANGUAGES.EN]: ["Red"],
+		},
+		color: {
+			r: 255,
+			g: 0,
+			b: 0,
+		},
+		level: 1,
+	},
+	//Orange
+	{
+		name: {
+			[LANGUAGES.INA]: ["Dewangga"],
+			[LANGUAGES.EN]: ["Orange Red"],
 		},
 		color: {
 			r: 255,
@@ -376,6 +426,24 @@ const colors = [
 		},
 		level: 3,
 	},
+	//Yellow
+	//Brown
+	///Green
+	{
+		name: {
+			[LANGUAGES.INA]: ["Hijau Pupus"],
+			[LANGUAGES.EN]: ["Lime"],
+		},
+		color: {
+			r: 0,
+			g: 255,
+			b: 0,
+		},
+		level: 1,
+	},
+	//Cyan
+	//Blue
+	//Purple
 ];
 
 export default colors;
