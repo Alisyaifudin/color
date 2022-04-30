@@ -51,9 +51,19 @@ export const metaSlice = createSlice({
 		},
 		submit: (state) => {
 			state.done = true;
+			const colorRBG = colors.map((c) => c.color);
+			const colorNames = colors.map((c) => c.name[state.language]);
+			const index = colorNames.findIndex((c) =>
+				c.map((co) => co.toLocaleLowerCase()).includes(state.guessName.toLocaleLowerCase())
+			);
+			if (index === -1) {
+				state.guessColor = { r: -1, g: -1, b: -1 };
+				return;
+			}
 			if (
-				state.guessName.toLocaleLowerCase() ===
-				state.mysteryName[state.language].toLocaleLowerCase()
+				state.mysteryColor.r === colorRBG[index].r &&
+				state.mysteryColor.g === colorRBG[index].g &&
+				state.mysteryColor.b === colorRBG[index].b
 			) {
 				state.win = true;
 				state.guessColor = state.mysteryColor;
@@ -61,13 +71,7 @@ export const metaSlice = createSlice({
 				return;
 			}
 			state.win = false;
-			const colorRBG = colors.map((c) => c.color);
-			const colorNames = colors.map((c) => c.name[state.language]);
-			const index = colorNames.findIndex((c) =>
-				c.map((co) => co.toLocaleLowerCase()).includes(state.guessName.toLocaleLowerCase())
-			);
-			if (index !== -1) state.guessColor = colorRBG[index];
-			else state.guessColor = { r: -1, g: -1, b: -1 };
+			state.guessColor = colorRBG[index];
 		},
 		skip: (state) => {
 			state.done = false;
