@@ -12,11 +12,7 @@ describe("MysteryColor", () => {
 	it("should render color", () => {
 		render(<MysteryColor />);
 		const colorEl = screen.getByTestId("color");
-		const nameEl = screen.getByText("black");
-		const iconEl = screen.getByTestId("RotateRightIcon");
 		expect(colorEl).toHaveStyle("background-color: rgb(0, 0, 0);");
-		expect(nameEl).not.toBeVisible();
-		expect(iconEl).not.toBeVisible();
 	});
 	it("should render color and the names", () => {
 		render(<MysteryColor />, { preloadedState: doneState });

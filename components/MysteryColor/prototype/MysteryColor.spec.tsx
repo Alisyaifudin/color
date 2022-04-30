@@ -6,11 +6,7 @@ describe("MysteryColor", () => {
 	it("should render color", () => {
 		render(<BasicMysteryColor />);
 		const colorEl = screen.getByTestId("color");
-		const nameEl = screen.getByText("lime");
-		const iconEl = screen.getByTestId("RotateRightIcon");
 		expect(colorEl).toHaveStyle("background-color: rgb(0, 255, 0);");
-		expect(nameEl).not.toBeVisible();
-		expect(iconEl).not.toBeVisible();
 	});
 	it("should render color and the names", () => {
 		render(<OpenedMysteryColor />);
