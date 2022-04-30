@@ -1236,7 +1236,7 @@ const colors = [
 	},
 	{
 		name: {
-			[LANGUAGES.INA]: ["Biru Ben-hur", "Sian", "Akua"],
+			[LANGUAGES.INA]: ["Biru Ben-hur", "Sian", "Akua", "Biru Air"],
 			[LANGUAGES.EN]: ["Aqua", "Cyan"],
 		},
 		color: {
@@ -1244,19 +1244,7 @@ const colors = [
 			g: 255,
 			b: 255,
 		},
-		level: 2,
-	},
-	{
-		name: {
-			[LANGUAGES.INA]: ["Biru Ben-hur", "Sian", "Biru Air"],
-			[LANGUAGES.EN]: ["Aqua", "Cyan"],
-		},
-		color: {
-			r: 0,
-			g: 255,
-			b: 255,
-		},
-		level: 2,
+		level: 1,
 	},
 	{
 		name: {
@@ -1295,6 +1283,186 @@ const colors = [
 		level: 3,
 	},
 	//Blue
+	{
+		name: {
+			[LANGUAGES.INA]: ["Biru Dongker", "Biru Kelasi"],
+			[LANGUAGES.EN]: ["Navy", "Deep Blue"],
+		},
+		color: {
+			r: 0,
+			g: 0,
+			b: 128,
+		},
+		level: 2,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Biru Tua"],
+			[LANGUAGES.EN]: ["Dark Blue"],
+		},
+		color: {
+			r: 0,
+			g: 0,
+			b: 139,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Biru Sedang"],
+			[LANGUAGES.EN]: ["Medium Blue"],
+		},
+		color: {
+			r: 0,
+			g: 0,
+			b: 205,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Biru"],
+			[LANGUAGES.EN]: ["Blue"],
+		},
+		color: {
+			r: 0,
+			g: 0,
+			b: 255,
+		},
+		level: 1,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Biru Malam"],
+			[LANGUAGES.EN]: ["Midnight Blue"],
+		},
+		color: {
+			r: 25,
+			g: 25,
+			b: 112,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Nilakandi"],
+			[LANGUAGES.EN]: ["Royal Blue"],
+		},
+		color: {
+			r: 65,
+			g: 105,
+			b: 225,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Biru Baja"],
+			[LANGUAGES.EN]: ["Steel Blue"],
+		},
+		color: {
+			r: 70,
+			g: 130,
+			b: 180,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Biru Dodger"],
+			[LANGUAGES.EN]: ["Dodger Blue"],
+		},
+		color: {
+			r: 30,
+			g: 144,
+			b: 255,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Biru Laut"],
+			[LANGUAGES.EN]: ["Deep Sky Blue", "Capri Blue", "Ice Blue", "Sea Blue"],
+		},
+		color: {
+			r: 0,
+			g: 191,
+			b: 255,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Lazuardi"],
+			[LANGUAGES.EN]: ["Cornflower Blue", "Genuine Ultramarine", "Lapis Lazuli"],
+		},
+		color: {
+			r: 100,
+			g: 149,
+			b: 237,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Biru Langit"],
+			[LANGUAGES.EN]: ["Sky Blue"],
+		},
+		color: {
+			r: 100,
+			g: 149,
+			b: 237,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Biru Langit Muda"],
+			[LANGUAGES.EN]: ["Light Sky Blue"],
+		},
+		color: {
+			r: 135,
+			g: 206,
+			b: 250,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Biru Baja Muda"],
+			[LANGUAGES.EN]: ["Light Steel Blue"],
+		},
+		color: {
+			r: 176,
+			g: 196,
+			b: 222,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Biru Muda"],
+			[LANGUAGES.EN]: ["Light Blue"],
+		},
+		color: {
+			r: 173,
+			g: 216,
+			b: 230,
+		},
+		level: 2,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Biru Bubuk"],
+			[LANGUAGES.EN]: ["Powder Blue"],
+		},
+		color: {
+			r: 176,
+			g: 224,
+			b: 230,
+		},
+		level: 3,
+	},
 	//Purple
 ];
 

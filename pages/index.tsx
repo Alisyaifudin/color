@@ -52,7 +52,7 @@ const Home: NextPage = () => {
 						</Typography>
 						<Stack
 							direction="row"
-							sx={{ width: "100%", maxHeight: done ? "250px" : "140px" }}
+							sx={{ width: "100%", maxHeight: done ? "300px" : "140px" }}
 							alignItems="flex-start"
 							justifyContent="center"
 						>
