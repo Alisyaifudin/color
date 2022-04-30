@@ -207,8 +207,126 @@ const colors = [
 		level: 2,
 	},
 	//Gray
-	//
-	//
+	{
+		name: {
+			[LANGUAGES.INA]: ["putih perak"],
+			[LANGUAGES.EN]: ["gainsboro", "silvery"],
+		},
+		color: {
+			r: 220,
+			g: 220,
+			b: 220,
+		},
+		level: 2,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["abu-abu muda"],
+			[LANGUAGES.EN]: ["light gray",],
+		},
+		color: {
+			r: 211,
+			g: 211,
+			b: 211,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["perak"],
+			[LANGUAGES.EN]: ["silver",],
+		},
+		color: {
+			r: 192,
+			g: 192,
+			b: 192,
+		},
+		level: 2,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["nilajada"],
+			[LANGUAGES.EN]: ["dark gray",],
+		},
+		color: {
+			r: 169,
+			g: 169,
+			b: 169,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["hitam sabak muda"],
+			[LANGUAGES.EN]: ["light slate gray",],
+		},
+		color: {
+			r: 119,
+			g: 136,
+			b: 153,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["kelabu"],
+			[LANGUAGES.EN]: ["gray",],
+		},
+		color: {
+			r: 128,
+			g: 128,
+			b: 128,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["hitam sabak"],
+			[LANGUAGES.EN]: ["slate gray",],
+		},
+		color: {
+			r: 112,
+			g: 128,
+			b: 144,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["abu-abu redup"],
+			[LANGUAGES.EN]: ["dim gray",],
+		},
+		color: {
+			r: 105,
+			g: 105,
+			b: 105,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["hitam sabak tua"],
+			[LANGUAGES.EN]: ["dark slate gray",],
+		},
+		color: {
+			r: 47,
+			g: 79,
+			b: 79,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["hitam"],
+			[LANGUAGES.EN]: ["black"],
+		},
+		color: {
+			r: 0,
+			g: 0,
+			b: 0,
+		},
+		level: 1,
+	},
 	///Green
 	{
 		name: {
@@ -229,18 +347,6 @@ const colors = [
 		},
 		color: {
 			r: 255,
-			g: 0,
-			b: 0,
-		},
-		level: 1,
-	},
-	{
-		name: {
-			[LANGUAGES.INA]: ["hitam"],
-			[LANGUAGES.EN]: ["black"],
-		},
-		color: {
-			r: 0,
 			g: 0,
 			b: 0,
 		},

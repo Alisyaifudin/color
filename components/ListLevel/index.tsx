@@ -10,6 +10,7 @@ function ListLevel() {
 	const handleClick = (level: number) => dispatch(setShowLevel(level));
 	const style: React.CSSProperties = {
 		position: "sticky",
+		top: "0px",
 	};
 	return <ListLevelProto level={level} levels={LEVELS} onClick={handleClick} style={style} />;
 }

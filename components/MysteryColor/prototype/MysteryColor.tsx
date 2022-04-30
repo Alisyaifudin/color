@@ -6,6 +6,8 @@ import Collapse from "@mui/material/Collapse";
 import RotateRightIcon from "@mui/icons-material/RotateRight";
 import IconButton from "@mui/material/IconButton";
 import { rgb2hsv } from "../../../utils/colorconversion";
+import Box from "@mui/material/Box";
+
 export type MysteryColorProps = {
 	/**
 	 * color name
@@ -33,35 +35,43 @@ export type MysteryColorProps = {
 	onClick: () => void;
 };
 
-export function MysteryColor({ name, color, done = false, hsv = false, onClick }: MysteryColorProps) {
+export function MysteryColor({
+	name,
+	color,
+	done = false,
+	hsv = false,
+	onClick,
+}: MysteryColorProps) {
 	const triplet = hsv ? rgb2hsv(color) : color;
 
-	const handleClick = () => onClick && onClick()
+	const handleClick = () => onClick && onClick();
 
 	return (
-		<Stack justifyContent="center" alignItems="center" gap="10px">
-			<Color data-testid="color" r={color.r} g={color.g} b={color.b} />
-			<Collapse in={done}>
-				<Typography textAlign="center" component="h2" variant="body1" fontSize="1.4rem">
-					{name}
-				</Typography>
-				<Stack direction="row" gap="15px" alignItems="center">
-					{Object.entries(triplet).map((entry) => (
-						<Typography key={entry[0]} data-testid="value" component="p" variant="caption">
-							{entry[0]}: {entry[1]}
-						</Typography>
-					))}
-					<IconButton onClick={handleClick}>
-						<RotateRightIcon />
-					</IconButton>
-				</Stack>
-			</Collapse>
-		</Stack>
+		<Box flexGrow={1}>
+			<Stack justifyContent="center" alignItems="center" gap="10px">
+				<Color data-testid="color" r={color.r} g={color.g} b={color.b} />
+				<Collapse in={done}>
+					{done && <Typography textAlign="center" component="h2" variant="body1" fontSize="1.4rem">
+						{name}
+					</Typography>}
+					<Stack direction="row" gap="5px" alignItems="center" paddingX="5px">
+						{Object.entries(triplet).map((entry) => (
+							<Typography key={entry[0]} data-testid="value" component="p" variant="caption">
+								{entry[0]}: {entry[1].toPrecision(3)}
+							</Typography>
+						))}
+					</Stack>
+				</Collapse>
+				{done && <IconButton onClick={handleClick}>
+					<RotateRightIcon />
+				</IconButton>}
+			</Stack>
+		</Box>
 	);
 }
 
 const Color = styled("div")<{ r: number; g: number; b: number }>`
 	background-color: rgb(${({ r }) => r}, ${({ g }) => g}, ${({ b }) => b});
-	width: 100px;
+	width: 100%;
 	aspect-ratio: 1;
 `;

@@ -50,9 +50,14 @@ const Home: NextPage = () => {
 						<Typography>
 							{DICT.SCORE[lang]}: {score}
 						</Typography>
-						<MysteryColor />
+						<Stack direction="row">
+							<MysteryColor />
+							<Collapse orientation="horizontal" in={done && !win}>
+								<AnswerColor />
+							</Collapse>
+						</Stack>
+
 						<TextField />
-						{done && !win && <AnswerColor />}
 					</Stack>
 				</Collapse>
 				<Collapse in={showList}>
