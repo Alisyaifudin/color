@@ -403,6 +403,18 @@ const colors = [
 	//Red
 	{
 		name: {
+			[LANGUAGES.INA]: ["Merah Tua"],
+			[LANGUAGES.EN]: ["Dark Red"],
+		},
+		color: {
+			r: 139,
+			g: 0,
+			b: 0,
+		},
+		level: 3,
+	},
+	{
+		name: {
 			[LANGUAGES.INA]: ["Merah"],
 			[LANGUAGES.EN]: ["Red"],
 		},
@@ -412,6 +424,90 @@ const colors = [
 			b: 0,
 		},
 		level: 1,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Merah Bata", "Bata Api"],
+			[LANGUAGES.EN]: ["Firebrick", "Brick Red", "Terra-cotta"],
+		},
+		color: {
+			r: 178,
+			g: 34,
+			b: 34,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Lembayung", "Kirmizi", "Merah Padam"],
+			[LANGUAGES.EN]: ["Crimson", "Bluish Red"],
+		},
+		color: {
+			r: 220,
+			g: 20,
+			b: 60,
+		},
+		level: 2,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Merah Indian", "Merah Tanah Liat"],
+			[LANGUAGES.EN]: ["Indian Red", "Laterite Red"],
+		},
+		color: {
+			r: 205,
+			g: 92,
+			b: 92,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Koral Muda"],
+			[LANGUAGES.EN]: ["Light Coral"],
+		},
+		color: {
+			r: 240,
+			g: 128,
+			b: 128,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Salmon", "Bangbang"],
+			[LANGUAGES.EN]: ["Salmon"],
+		},
+		color: {
+			r: 250,
+			g: 128,
+			b: 114,
+		},
+		level: 2,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Salmon Tua", "Bangbang Tua"],
+			[LANGUAGES.EN]: ["Dark Salmon"],
+		},
+		color: {
+			r: 233,
+			g: 150,
+			b: 122,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Salmon Muda", "Bangbang Muda"],
+			[LANGUAGES.EN]: ["Light Salmon"],
+		},
+		color: {
+			r: 255,
+			g: 160,
+			b: 122,
+		},
+		level: 3,
 	},
 	//Orange
 	{
