@@ -1029,7 +1029,271 @@ const colors = [
 		},
 		level: 1,
 	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Hijau Semi"],
+			[LANGUAGES.EN]: ["Spring Green"],
+		},
+		color: {
+			r: 0,
+			g: 255,
+			b: 127,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Hijau Semi Sedang"],
+			[LANGUAGES.EN]: ["Medium Spring Green"],
+		},
+		color: {
+			r: 0,
+			g: 250,
+			b: 154,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Hijau Laut Gelap"],
+			[LANGUAGES.EN]: ["Dark Sea Green"],
+		},
+		color: {
+			r: 143,
+			g: 188,
+			b: 143,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Aquamarine Sedang"],
+			[LANGUAGES.EN]: ["Medium Aquamarine"],
+		},
+		color: {
+			r: 102,
+			g: 205,
+			b: 170,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Kuning Hijau"],
+			[LANGUAGES.EN]: ["Yellow Green"],
+		},
+		color: {
+			r: 154,
+			g: 205,
+			b: 50,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Hijau Rumput"],
+			[LANGUAGES.EN]: ["Lawn Green", "Grass Green"],
+		},
+		color: {
+			r: 124,
+			g: 252,
+			b: 0,
+		},
+		level: 2,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Pucuk Pisang"],
+			[LANGUAGES.EN]: ["Chartreuse", "Greenish Yellow"],
+		},
+		color: {
+			r: 127,
+			g: 255,
+			b: 0,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Hijau Muda"],
+			[LANGUAGES.EN]: ["Light Green"],
+		},
+		color: {
+			r: 144,
+			g: 238,
+			b: 144,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Hijau Kuning"],
+			[LANGUAGES.EN]: ["Green Yellow"],
+		},
+		color: {
+			r: 173,
+			g: 255,
+			b: 47,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Hijau Pucat"],
+			[LANGUAGES.EN]: ["Pale Green"],
+		},
+		color: {
+			r: 152,
+			g: 251,
+			b: 152,
+		},
+		level: 3,
+	},
 	//Cyan
+	{
+		name: {
+			[LANGUAGES.INA]: ["Hijau Laut"],
+			[LANGUAGES.EN]: ["Teal", "Bluish Green", "Deep Sea Green"],
+		},
+		color: {
+			r: 0,
+			g: 128,
+			b: 128,
+		},
+		level: 2,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Nilangsuka"],
+			[LANGUAGES.EN]: ["Dark Cyan", "Dark Cyan Blue"],
+		},
+		color: {
+			r: 0,
+			g: 139,
+			b: 139,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Hijau Laut Muda"],
+			[LANGUAGES.EN]: ["Light Sea Green"],
+		},
+		color: {
+			r: 32,
+			g: 178,
+			b: 170,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Biru Kadet"],
+			[LANGUAGES.EN]: ["Cadet Blue"],
+		},
+		color: {
+			r: 95,
+			g: 158,
+			b: 160,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Indranila", "Toska Tua"],
+			[LANGUAGES.EN]: ["Dark Turquoise", "Deep Turquoise", "Dark Bluish Green"],
+		},
+		color: {
+			r: 0,
+			g: 206,
+			b: 209,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Toska Sedang"],
+			[LANGUAGES.EN]: ["Medium Turquoise"],
+		},
+		color: {
+			r: 0,
+			g: 206,
+			b: 209,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Biru Pirus", "Toska"],
+			[LANGUAGES.EN]: ["Turquoise"],
+		},
+		color: {
+			r: 64,
+			g: 224,
+			b: 208,
+		},
+		level: 2,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Biru Ben-hur", "Sian", "Akua"],
+			[LANGUAGES.EN]: ["Aqua", "Cyan"],
+		},
+		color: {
+			r: 0,
+			g: 255,
+			b: 255,
+		},
+		level: 2,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Biru Ben-hur", "Sian", "Biru Air"],
+			[LANGUAGES.EN]: ["Aqua", "Cyan"],
+		},
+		color: {
+			r: 0,
+			g: 255,
+			b: 255,
+		},
+		level: 2,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Aquamarine"],
+			[LANGUAGES.EN]: ["Aquamarine"],
+		},
+		color: {
+			r: 127,
+			g: 255,
+			b: 212,
+		},
+		level: 2,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Toska Pucat"],
+			[LANGUAGES.EN]: ["Pale Turquoise"],
+		},
+		color: {
+			r: 175,
+			g: 238,
+			b: 238,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Sian Muda"],
+			[LANGUAGES.EN]: ["Light Cyan"],
+		},
+		color: {
+			r: 224,
+			g: 255,
+			b: 255,
+		},
+		level: 3,
+	},
 	//Blue
 	//Purple
 ];
