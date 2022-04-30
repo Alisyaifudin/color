@@ -51,20 +51,24 @@ export function MysteryColor({
 			<Stack justifyContent="center" alignItems="center" gap="10px">
 				<Color data-testid="color" r={color.r} g={color.g} b={color.b} />
 				<Collapse in={done}>
-					{done && <Typography textAlign="center" component="h2" variant="body1" fontSize="1.4rem">
-						{name}
-					</Typography>}
+					{done && (
+						<Typography textAlign="center" component="h2" variant="body1" fontSize="1.4rem">
+							{name}
+						</Typography>
+					)}
 					<Stack direction="row" gap="5px" alignItems="center" paddingX="5px">
-						{Object.entries(triplet).map((entry) => (
+						{Object.entries(triplet).map((entry, i) => (
 							<Typography key={entry[0]} data-testid="value" component="p" variant="caption">
-								{entry[0]}: {entry[1].toPrecision(3)}
+								{entry[0]}: {hsv && i !== 0 ? entry[1].toFixed(2) : entry[1]}
 							</Typography>
 						))}
 					</Stack>
 				</Collapse>
-				{done && <IconButton onClick={handleClick}>
-					<RotateRightIcon />
-				</IconButton>}
+				{done && (
+					<IconButton onClick={handleClick}>
+						<RotateRightIcon />
+					</IconButton>
+				)}
 			</Stack>
 		</Box>
 	);
