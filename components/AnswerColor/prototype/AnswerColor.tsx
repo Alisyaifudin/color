@@ -39,9 +39,9 @@ export function AnswerColor({ name, color, hsv = false }: AnswerColorProps) {
 						{name}
 					</Typography>
 					<Stack direction="row" gap="5px" alignItems="center" paddingX="5px">
-						{Object.entries(thecolor).map((entry, i) => (
+						{Object.entries(thecolor).map((entry) => (
 							<Typography key={entry[0]} data-testid="value" component="p" variant="caption">
-								{entry[0]}: {hsv && i !== 0 ? entry[1].toFixed(2) : entry[1]}
+								{entry[0]}: {hsv ? entry[1].toFixed(2) : entry[1]}
 							</Typography>
 						))}
 					</Stack>
