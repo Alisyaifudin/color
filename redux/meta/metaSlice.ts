@@ -102,6 +102,7 @@ export const metaSlice = createSlice({
 			};
 			state.mysteryColor = thecolors[random].color;
 			state.score = 0;
+			state.done = false;
 		},
 	},
 });

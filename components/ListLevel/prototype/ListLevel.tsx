@@ -12,13 +12,9 @@ export type ListLevelProps = {
 	 * onClick other level
 	 */
 	onClick: (level: number) => void;
-	/**
-	 * Additional CSSProps
-	 */
-	style?: React.CSSProperties;
 };
 
-export function ListLevel({ levels, level, onClick, style }: ListLevelProps) {
+export function ListLevel({ levels, level, onClick }: ListLevelProps) {
 	const handleClick = (level: number) => () => onClick && onClick(level);
 	return (
 		<>
@@ -28,8 +24,11 @@ export function ListLevel({ levels, level, onClick, style }: ListLevelProps) {
 					maxWidth: 80,
 					bgcolor: "background.paper",
 					display: { xs: "none", sm: "flex" },
+					position: "sticky",
+					top: "10px",
+					height: "fit-content",
+					padding: 0
 				}}
-				style={style}
 			>
 				<List>
 					{levels.map((l) => (
@@ -39,6 +38,7 @@ export function ListLevel({ levels, level, onClick, style }: ListLevelProps) {
 								component="a"
 								selected={l === level}
 								data-testid="list"
+
 							>
 								<Typography variant="subtitle2">Level {l}</Typography>
 							</ListItemButton>
@@ -53,8 +53,9 @@ export function ListLevel({ levels, level, onClick, style }: ListLevelProps) {
 					display: { xs: "flex", sm: "none" },
 					alignItems: "center",
 					justifyContent: "center",
+					position: "sticky",
+					top: "0px"
 				}}
-				style={style}
 			>
 				{levels.map((l) => (
 					<ListItem disablePadding key={l}>

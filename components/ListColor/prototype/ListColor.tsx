@@ -38,7 +38,7 @@ export function ListColor({ colors, level, langs }: ListColorProps) {
 	const selectedColors = colors.filter((color) => color.level <= level);
 	return (
 		<Box sx={{ flexGrow: 1}}>
-			<Grid container spacing={2} alignItems="center">
+			<Grid container spacing={1} alignItems="center">
 				{selectedColors.map((color, index) => (
 					<Grid item xs={12} sm={6} md={4} key={index}>
 						<Item>
