@@ -704,6 +704,210 @@ const colors = [
 		level: 2,
 	},
 	//Brown
+	{
+		name: {
+			[LANGUAGES.INA]: ["Merah Manggis"],
+			[LANGUAGES.EN]: ["Maroon", "Violet Brown"],
+		},
+		color: {
+			r: 128,
+			g: 0,
+			b: 0,
+		},
+		level: 2,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Cokelat"],
+			[LANGUAGES.EN]: ["Brown"],
+		},
+		color: {
+			r: 165,
+			g: 42,
+			b: 42,
+		},
+		level: 1,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Cokelat Pelana"],
+			[LANGUAGES.EN]: ["Saddle Brown"],
+		},
+		color: {
+			r: 139,
+			g: 69,
+			b: 19,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Sienna"],
+			[LANGUAGES.EN]: ["Sienna"],
+		},
+		color: {
+			r: 160,
+			g: 82,
+			b: 45,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Coklat"],
+			[LANGUAGES.EN]: ["Chocolate"],
+		},
+		color: {
+			r: 210,
+			g: 105,
+			b: 30,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Emas Batang Tua"],
+			[LANGUAGES.EN]: ["Dark Goldenrod"],
+		},
+		color: {
+			r: 184,
+			g: 134,
+			b: 11,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Peru"],
+			[LANGUAGES.EN]: ["Peru"],
+		},
+		color: {
+			r: 205,
+			g: 133,
+			b: 63,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Pirang Tibarau"],
+			[LANGUAGES.EN]: ["Rosy Brown", "Rosy Puff", "Cigar Brown", "Havana Brown"],
+		},
+		color: {
+			r: 188,
+			g: 143,
+			b: 143,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Solidago", "Batang Emas"],
+			[LANGUAGES.EN]: ["Goldenrod"],
+		},
+		color: {
+			r: 218,
+			g: 165,
+			b: 32,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Cokelat Pasir"],
+			[LANGUAGES.EN]: ["Sandy Brown"],
+		},
+		color: {
+			r: 244,
+			g: 164,
+			b: 96,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Sawo Matang"],
+			[LANGUAGES.EN]: ["Tan", "Sunburnt"],
+		},
+		color: {
+			r: 210,
+			g: 180,
+			b: 140,
+		},
+		level: 2,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Kayu Bakar"],
+			[LANGUAGES.EN]: ["Burlywood"],
+		},
+		color: {
+			r: 222,
+			g: 184,
+			b: 135,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Turangga"],
+			[LANGUAGES.EN]: ["Wheat", "Dun"],
+		},
+		color: {
+			r: 245,
+			g: 222,
+			b: 179,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Putih Navajo"],
+			[LANGUAGES.EN]: ["Navajo White"],
+		},
+		color: {
+			r: 255,
+			g: 222,
+			b: 173,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Bisque"],
+			[LANGUAGES.EN]: ["Bisque"],
+		},
+		color: {
+			r: 255,
+			g: 228,
+			b: 196,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Almond Pucat"],
+			[LANGUAGES.EN]: ["Blanched Almond"],
+		},
+		color: {
+			r: 255,
+			g: 235,
+			b: 205,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Sutra Jagung"],
+			[LANGUAGES.EN]: ["Cornsilk"],
+		},
+		color: {
+			r: 255,
+			g: 248,
+			b: 220,
+		},
+		level: 3,
+	},
 	///Green
 	{
 		name: {
