@@ -439,7 +439,7 @@ const colors = [
 	},
 	{
 		name: {
-			[LANGUAGES.INA]: ["Lembayung", "Kirmizi", "Merah Padam"],
+			[LANGUAGES.INA]: ["Merah Lembayung", "Kirmizi", "Merah Padam"],
 			[LANGUAGES.EN]: ["Crimson", "Bluish Red"],
 		},
 		color: {
@@ -1550,7 +1550,7 @@ const colors = [
 	},
 	{
 		name: {
-			[LANGUAGES.INA]: ["Fusia", "Magenta", "Merah Lembayung"],
+			[LANGUAGES.INA]: ["Fusia", "Magenta"],
 			[LANGUAGES.EN]: ["Fuchsia", "Magenta"],
 		},
 		color: {
