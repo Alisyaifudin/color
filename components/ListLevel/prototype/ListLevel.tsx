@@ -62,7 +62,7 @@ export function ListLevel({ levels, level, onClick, style }: ListLevelProps) {
 							onClick={handleClick(l)}
 							component="a"
 							selected={l === level}
-							data-testid="list"
+							data-testid="list-horizontal"
 						>
 							<Typography variant="subtitle2">Level {l}</Typography>
 						</ListItemButton>

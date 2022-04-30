@@ -9,6 +9,7 @@ function MysteryColor() {
 	const color = useAppSelector((state) => state.meta.mysteryColor);
 	const done = useAppSelector((state) => state.meta.done);
 	const name = useAppSelector((state) => state.meta.mysteryName[lang]);
+
 	const hsv = useAppSelector((state) => state.meta.hsv);
 
 	const handleClick = () => dispatch(setHsv());

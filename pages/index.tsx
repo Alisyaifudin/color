@@ -8,7 +8,7 @@ import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import { useAppDispatch, useAppSelector } from "../app/hooks";
 import AnswerColor from "../components/AnswerColor";
-import { setLanguage, setTheme } from "../redux/meta/metaSlice";
+import { setLanguage, setTheme, skip } from "../redux/meta/metaSlice";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 import Collapse from "@mui/material/Collapse";
@@ -24,7 +24,9 @@ const Home: NextPage = () => {
 	const showList = useAppSelector((state) => state.meta.showList);
 	const score = useAppSelector((state) => state.meta.score);
 	const lang = useAppSelector((state) => state.meta.language);
-
+	useEffect(() => {
+		dispatch(skip());
+	}, [dispatch]);
 	useEffect(() => {
 		const localMode = window.localStorage.getItem("mode");
 		if (localMode === "light" || localMode === "dark") dispatch(setTheme(localMode));
@@ -42,7 +44,7 @@ const Home: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<Navbar />
-			<Container maxWidth="sm" sx={{ marginBlock: "2rem" }}>
+			<Container maxWidth="md" sx={{ marginBlock: "2rem" }}>
 				<Collapse in={!showList}>
 					<Stack sx={{ width: "100%" }} gap="20px" alignItems="center">
 						<Typography>

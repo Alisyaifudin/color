@@ -20,35 +20,47 @@ describe("ListColor", () => {
 		const colorEls = screen.getAllByTestId("color");
 		const thecolors = colors.filter((color) => color.level <= 1);
 		expect(colorEls.length).toEqual(thecolors.length);
-		thecolors.forEach((color) => {
-			const engName = screen.getByText(color.name[LANGUAGES.EN as "en-US" | "id-ID"]);
-			const idnName = screen.getByText(color.name[LANGUAGES.INA as "en-US" | "id-ID"]);
-			expect(engName).toBeInTheDocument();
-			expect(idnName).toBeInTheDocument();
+		const engNames = screen.getAllByTestId(LANGUAGES.EN);
+		const idnNames = screen.getAllByTestId(LANGUAGES.INA);
+		thecolors.forEach((color, i) => {
+			expect(engNames[i]).toHaveTextContent(
+				color.name[LANGUAGES.EN as "en-US" | "id-ID"].join(", ")
+			);
+			expect(idnNames[i]).toHaveTextContent(
+				color.name[LANGUAGES.INA as "en-US" | "id-ID"].join(", ")
+			);
 		});
 	});
 	it("should render all colors and their names (level 2)", () => {
-		render(<ListColor />, {preloadedState: level2State});
+		render(<ListColor />, { preloadedState: level2State });
 		const colorEls = screen.getAllByTestId("color");
 		const thecolors = colors.filter((color) => color.level <= 2);
 		expect(colorEls.length).toEqual(thecolors.length);
-		thecolors.forEach((color) => {
-			const engName = screen.getByText(color.name[LANGUAGES.EN as "en-US" | "id-ID"]);
-			const idnName = screen.getByText(color.name[LANGUAGES.INA as "en-US" | "id-ID"]);
-			expect(engName).toBeInTheDocument();
-			expect(idnName).toBeInTheDocument();
+		const engNames = screen.getAllByTestId(LANGUAGES.EN);
+		const idnNames = screen.getAllByTestId(LANGUAGES.INA);
+		thecolors.forEach((color, i) => {
+			expect(engNames[i]).toHaveTextContent(
+				color.name[LANGUAGES.EN as "en-US" | "id-ID"].join(", ")
+			);
+			expect(idnNames[i]).toHaveTextContent(
+				color.name[LANGUAGES.INA as "en-US" | "id-ID"].join(", ")
+			);
 		});
 	});
-  it("should render all colors and their names (level 3)", () => {
-		render(<ListColor />, {preloadedState: level3State});
+	it("should render all colors and their names (level 3)", () => {
+		render(<ListColor />, { preloadedState: level3State });
 		const colorEls = screen.getAllByTestId("color");
 		const thecolors = colors.filter((color) => color.level <= 3);
 		expect(colorEls.length).toEqual(thecolors.length);
-		thecolors.forEach((color) => {
-			const engName = screen.getByText(color.name[LANGUAGES.EN as "en-US" | "id-ID"]);
-			const idnName = screen.getByText(color.name[LANGUAGES.INA as "en-US" | "id-ID"]);
-			expect(engName).toBeInTheDocument();
-			expect(idnName).toBeInTheDocument();
+		const engNames = screen.getAllByTestId(LANGUAGES.EN);
+		const idnNames = screen.getAllByTestId(LANGUAGES.INA);
+		thecolors.forEach((color, i) => {
+			expect(engNames[i]).toHaveTextContent(
+				color.name[LANGUAGES.EN as "en-US" | "id-ID"].join(", ")
+			);
+			expect(idnNames[i]).toHaveTextContent(
+				color.name[LANGUAGES.INA as "en-US" | "id-ID"].join(", ")
+			);
 		});
 	});
 });

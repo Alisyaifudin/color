@@ -23,7 +23,7 @@ export type ListColorProps = {
 	 */
 	colors: {
 		name: {
-			[x: string]: string;
+			[x: string]: string[];
 		};
 		color: {
 			r: number;
@@ -43,9 +43,9 @@ export function ListColor({ colors, level, langs }: ListColorProps) {
 					<Grid item xs={12} sm={6} md={4} key={index}>
 						<Item>
 							<Color data-testid="color" r={color.color.r} g={color.color.g} b={color.color.b} />
-							<Typography variant="caption" fontStyle="italic">{color.name[langs[0]]}</Typography>
+							<Typography data-testid="en-US" variant="caption" fontStyle="italic">{color.name[langs[0]].join(", ")}</Typography>
 							<Divider orientation="vertical" flexItem />
-							<Typography variant="caption">{color.name[langs[1]]}</Typography>
+							<Typography data-testid="id-ID" variant="caption">{color.name[langs[1]].join(", ")}</Typography>
 						</Item>
 					</Grid>
 				))}
@@ -67,6 +67,6 @@ const Item = styled(Paper)(({ theme }) => ({
 
 const Color = styled("div")<{ r: number; g: number; b: number }>`
 	background-color: rgb(${({ r }) => r}, ${({ g }) => g}, ${({ b }) => b});
-	width: 10px;
+	width: 20px;
 	aspect-ratio: 1;
 `;

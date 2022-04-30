@@ -3,8 +3,8 @@ import { ListColor } from "./ListColor";
 export const colors = [
 	{
 		name: {
-			"id-ID": "hijau pupus",
-			"en-US": "lime",
+			"id-ID": ["hijau pupus"],
+			"en-US": ["lime"],
 		},
 		color: {
 			r: 0,
@@ -15,8 +15,8 @@ export const colors = [
 	},
 	{
 		name: {
-			"id-ID": "merah",
-			"en-US": "red",
+			"id-ID": ["merah"],
+			"en-US": ["red"],
 		},
 		color: {
 			r: 255,
@@ -27,8 +27,8 @@ export const colors = [
 	},
 	{
 		name: {
-			"id-ID": "hitam",
-			"en-US": "black",
+			"id-ID": ["hitam"],
+			"en-US": ["black"],
 		},
 		color: {
 			r: 0,

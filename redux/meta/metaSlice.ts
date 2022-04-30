@@ -59,21 +59,46 @@ export const metaSlice = createSlice({
 			}
 			state.win = false;
 			const colorRBG = colors.map((c) => c.color);
-			const colorNames = colors.map((c) => c.name[state.language].toLocaleLowerCase());
-			const index = colorNames.findIndex((c) => c === state.guessName.toLocaleLowerCase());
+			const colorNames = colors.map((c) => c.name[state.language]);
+			const index = colorNames.findIndex((c) =>
+				c.map((co) => co.toLocaleLowerCase()).includes(state.guessName.toLocaleLowerCase())
+			);
 			if (index !== -1) state.guessColor = colorRBG[index];
 			else state.guessColor = { r: -1, g: -1, b: -1 };
 		},
 		skip: (state) => {
 			state.done = false;
 			state.guessName = "";
-			if(!state.win) state.score = 0;
+			if (!state.win) state.score = 0;
+			const thecolors = colors.filter((color) => color.level <= state.level);
+			const random = Math.floor(Math.random() * thecolors.length);
+			const namesEng = thecolors[random].name[LANGUAGES.EN];
+			const randomEng = Math.floor(Math.random() * namesEng.length);
+			const namesIdn = thecolors[random].name[LANGUAGES.INA];
+			const randomIdn = Math.floor(Math.random() * namesIdn.length);
+			state.mysteryName = {
+				[LANGUAGES.EN]: namesEng[randomEng],
+				[LANGUAGES.INA]: namesIdn[randomIdn],
+			};
+			state.mysteryColor = thecolors[random].color;
 		},
 		setHsv: (state) => {
 			state.hsv = !state.hsv;
 		},
 		setLevel: (state, action: PayloadAction<number>) => {
 			state.level = action.payload;
+			const thecolors = colors.filter((color) => color.level <= action.payload);
+			const random = Math.floor(Math.random() * thecolors.length);
+			const namesEng = thecolors[random].name[LANGUAGES.EN];
+			const randomEng = Math.floor(Math.random() * namesEng.length);
+			const namesIdn = thecolors[random].name[LANGUAGES.INA];
+			const randomIdn = Math.floor(Math.random() * namesIdn.length);
+			state.mysteryName = {
+				[LANGUAGES.EN]: namesEng[randomEng],
+				[LANGUAGES.INA]: namesIdn[randomIdn],
+			};
+			state.mysteryColor = thecolors[random].color;
+			state.score = 0;
 		},
 	},
 });
