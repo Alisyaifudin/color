@@ -571,6 +571,138 @@ const colors = [
 		level: 1,
 	},
 	//Yellow
+	{
+		name: {
+			[LANGUAGES.INA]: ["Khaki Tua"],
+			[LANGUAGES.EN]: ["Dark Khaki"],
+		},
+		color: {
+			r: 189,
+			g: 183,
+			b: 107,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Emas"],
+			[LANGUAGES.EN]: ["Gold"],
+		},
+		color: {
+			r: 255,
+			g: 215,
+			b: 0,
+		},
+		level: 2,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Khaki"],
+			[LANGUAGES.EN]: ["Khaki"],
+		},
+		color: {
+			r: 240,
+			g: 230,
+			b: 140,
+		},
+		level: 2,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Kembang Persik"],
+			[LANGUAGES.EN]: ["Peach Puff"],
+		},
+		color: {
+			r: 255,
+			g: 218,
+			b: 185,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Kuning"],
+			[LANGUAGES.EN]: ["Yellow"],
+		},
+		color: {
+			r: 255,
+			g: 255,
+			b: 0,
+		},
+		level: 1,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Emas Pucat"],
+			[LANGUAGES.EN]: ["Pale Goldenrod"],
+		},
+		color: {
+			r: 238,
+			g: 232,
+			b: 170,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Mokasin"],
+			[LANGUAGES.EN]: ["Moccasin"],
+		},
+		color: {
+			r: 255,
+			g: 228,
+			b: 181,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Pepaya Pucat"],
+			[LANGUAGES.EN]: ["Papaya Whip"],
+		},
+		color: {
+			r: 255,
+			g: 239,
+			b: 213,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Kuning Emas Muda"],
+			[LANGUAGES.EN]: ["Light Goldenrod Yellow"],
+		},
+		color: {
+			r: 250,
+			g: 250,
+			b: 210,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Sifon Lemon"],
+			[LANGUAGES.EN]: ["Lemon Chiffon"],
+		},
+		color: {
+			r: 255,
+			g: 250,
+			b: 205,
+		},
+		level: 3,
+	},
+	{
+		name: {
+			[LANGUAGES.INA]: ["Kuning Muda"],
+			[LANGUAGES.EN]: ["Light Yellow"],
+		},
+		color: {
+			r: 255,
+			g: 255,
+			b: 224,
+		},
+		level: 2,
+	},
 	//Brown
 	///Green
 	{
